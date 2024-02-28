@@ -9,21 +9,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { UserButton } from "@clerk/nextjs";
 
-function Navbar() {
+function RightNav() {
   return (
-            <aside className="group/sidebar flex flex-col shrink-0 sm:w-[200px] transition-all duration-300 ease-in-out m-0 fixed z-40 inset-y-0 left-0 bg-[#23252e] sidenav fixed-start loopple-fixed-start" id="sidenav-main">
-
-        <div className="flex items-center justify-between px-8 py-5">
-            <div className="flex items-center mr-5">
-
-            <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
-      {/* <Image src="https://flowbite.com/docs/images/logo.svg" className="h-8" width={100} height={100} alt="JUMBO FILMZ Logo" /> */}
-      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">JUMBO FILMZ</span>
-  </a>
-            </div>
-        </div>
-
-        <div className="hidden border-b border-2 lg:block dark:border-neutral-700/70 border-neutral-200"></div>
+            <aside className="flex flex-col shrink-0 sm:w-[200px] transition-all duration-300 ease-in-out m-0 fixed z-40 inset-y-0 top-[70px] right-0 bg-[#23252e] fixed-end loopple-fixed-end">
 
         <div className="relative pl-3 my-5">
             <div className="flex flex-col w-full font-medium">
@@ -55,7 +43,7 @@ function Navbar() {
                 <Link href="javascript:;" className="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-white">Library</Link>
                 </span>
             </div>
-
+            
             <div className="hidden border-b border-2 lg:block dark:border-neutral-700/70 border-neutral-200"></div>
 
             <div className='flex flex-row  items-center transition-all duration-300 ease-in-out hover:bg-[#b70000] rounded-3xl'>
@@ -104,4 +92,4 @@ function Navbar() {
       )
 }
 
-export default Navbar
+export default RightNav
