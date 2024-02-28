@@ -68,7 +68,7 @@ export default function Home() {
           <div className="flex flex-row w-[270px] h-[100px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-5">
             <Image className="rounded" src="/assets/avatar1.jpeg" width={60} height={10} />
             <div className="flex flex-col justify-center items-ceter">
-              <p className="font-semibold text-[0.95rem] uppercase">Avata Way of water</p>
+              <p className="font-semibold text-[0.95rem] uppercase">Avatar Way of water</p>
               <p >Tom Cruise</p>
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function Home() {
 
 
       <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e]">
-        <Image className="rounded w-full h-full" src="/assets/avatar4.jpeg" width={60} height={10} />
+        <Image className="rounded w-full h-full" src="/assets/jrngb.jpg" width={60} height={10} />
         {/* <p className="">Ant Man Quantamania</p> */}
       </div>
       <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
