@@ -7,7 +7,7 @@ function TopNav() {
   return (
     
 
-<nav className="bg-white dark:bg-[#23252e] fixed w-full z-20 top-0 start-[200px]">
+<nav className="bg-white dark:bg-[#23252e] fixed w-full z-20 top-0 md:start-[200px]">
   <div className="max-w-screen-xl flex flex-wrap justify-center gap-[200px] items-center mx-auto p-4">
  {/* <p>Hello</p> */}
   <form className="flex items-center ml-[1y0px] max-w-lg">   

@@ -11,7 +11,7 @@ import { UserButton } from "@clerk/nextjs";
 
 function Navbar() {
     return (
-        <aside className="group/sidebar flex flex-col justify-between shrink-0 sm:w-[200px] transition-all duration-300 ease-in-out m-0 fixed z-40 inset-y-0 left-0 bg-[#23252e] sidenav h-[100svh] fixed-start loopple-fixed-start" id="sidenav-main">
+        <aside className="group/sidebar hidden md:flex flex-col justify-between shrink-0 sm:w-[200px] transition-all duration-300 ease-in-out m-0 fixed z-40 inset-y-0 left-0 bg-[#23252e] sidenav h-[100svh] fixed-start loopple-fixed-start" id="sidenav-main">
 
 
 

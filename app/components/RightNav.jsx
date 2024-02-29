@@ -11,7 +11,7 @@ import { UserButton } from "@clerk/nextjs";
 
 function RightNav() {
     return (
-        <aside className="flex flex-col shrink-0 sm:w-[200px] transition-all duration-300 ease-in-out m-0 fixed z-40 inset-y-0 top-[70px] right-0 bg-[#23252e] fixed-end loopple-fixed-end">
+        <aside className="hidden md:flex flex-col shrink-0 sm:w-[200px] transition-all duration-300 ease-in-out m-0 fixed z-40 inset-y-0 top-[70px] right-0 bg-[#23252e] fixed-end loopple-fixed-end">
 
             <div className="relative pl-3 my-5">
                 <div className="flex flex-col w-full font-medium">
@@ -81,7 +81,7 @@ function RightNav() {
 
                     </div>
 
-                    <div className="hidden border-b border-2 lg:block dark:border-neutral-700/70 border-neutral-200"></div>
+                    <div className="hidden border-b border-2 lg:block my-2 dark:border-neutral-700/70 border-neutral-200"></div>
 
                     <div className="block mt-3 p-2">
                         <div className="">

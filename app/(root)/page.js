@@ -8,17 +8,17 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-start ml-[210px] mt-[80px]">
+    <main className="flex min-h-screen flex-col items-start md:ml-[210px] md:mt-[80px]">
       {/* <TopNav /> */}
       <div className="flex flex-row gap-5">
         <div className="relative">
-          <Image className="rounded-2xl w-[700px] h-[400px]" src="/assets/spider-verse.jpg" width={700} height={250} />
+          <Image className="md:rounded-2xl w-[700px] h-[400px]" src="/assets/spider-verse.jpg" width={700} height={250} />
 
           {/* banner overlay */}
-          <div className="absolute rounded-2xl bg-[black] opacity-50 h-full top-0 w-full"></div>
+          <div className="absolute md:rounded-2xl bg-[black] opacity-50 h-full top-0 w-full"></div>
           <div>
-            <div className="absolute ml-12  top-[200px] flex flex-col justify-center items-ceter">
-              <p className="font-bold text-[20px] uppercase">Spiderman into the spider verse</p>
+            <div className="absolute ml-12  top-[150px] md:top-[200px] flex flex-col justify-center items-ceter">
+              <p className="font-bold text-[18px] md:text-[20px] uppercase">Spiderman into the spider verse</p>
               <p className="text-center">Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.</p>
 
               <div className="flex flex-row items-center mt-3 gap-3">
@@ -42,8 +42,7 @@ export default function Home() {
         </div>
 
 
-        <div>
-
+        <div className="hidden md:block">
           <div className="flex flex-row items-ceter justify-between">
           <p>Check These out</p>
             <Link className="flex flex-row items-center" href='/'><p>All</p> <IoIosArrowForward /></Link>
@@ -110,6 +109,7 @@ export default function Home() {
       </div>
       </div>
 </div>
+
     </main>
   );
 }
