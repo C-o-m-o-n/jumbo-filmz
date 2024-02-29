@@ -1,0 +1,421 @@
+{
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/jp5MBWKaDVBuzaSFHTHGc9kpu51.jpg",
+        "id": 792307,
+        "title": "Poor Things",
+        "original_language": "en",
+        "original_title": "Poor Things",
+        "overview": "Brought back to life by an unorthodox scientist, a young woman runs off with a debauched lawyer on a whirlwind adventure across the continents. Free from the prejudices of her times, she grows steadfast in her purpose to stand for equality and liberation.",
+        "poster_path": "/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          878,
+          10749,
+          35
+        ],
+        "popularity": 858.647,
+        "release_date": "2023-12-07",
+        "video": false,
+        "vote_average": 8.103,
+        "vote_count": 1455
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ekRp1sEA8pnuzVHQkUESTgNSKdW.jpg",
+        "id": 932420,
+        "title": "Code 8 Part II",
+        "original_language": "en",
+        "original_title": "Code 8 Part II",
+        "overview": "In a world where superpowered people are heavily policed by robots, an ex-con teams up with a drug lord he despises to protect a teen from a corrupt cop.",
+        "poster_path": "/hhvMTxlTZtnCOe7YFhod9uz3m37.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          878,
+          28
+        ],
+        "popularity": 59.185,
+        "release_date": "2024-02-27",
+        "video": false,
+        "vote_average": 7.071,
+        "vote_count": 14
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/qBQV4i2sjIydDJUKm7pwvpyfy5p.jpg",
+        "id": 693134,
+        "title": "Dune: Part Two",
+        "original_language": "en",
+        "original_title": "Dune: Part Two",
+        "overview": "Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, Paul endeavors to prevent a terrible future only he can foresee.",
+        "poster_path": "/mFnF8tpPMqEwti2J2aMhYGZYdv0.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          878,
+          12
+        ],
+        "popularity": 897.378,
+        "release_date": "2024-02-27",
+        "video": false,
+        "vote_average": 8.532,
+        "vote_count": 125
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/n9NMlYd4TrSPErkRctNJaeTkGCM.jpg",
+        "id": 461130,
+        "title": "Code 8",
+        "original_language": "en",
+        "original_title": "Code 8",
+        "overview": "In Lincoln City, some inhabitants have extraordinary abilities. Most live below the poverty line, under the close surveillance of a heavily militarized police force. Connor, a construction worker with powers, involves with a criminal gang to help his ailing mother. (Based on the short film “Code 8,” 2016.)",
+        "poster_path": "/izGX7npHEopDQvngYcxMJEfcFbj.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          878,
+          28,
+          80
+        ],
+        "popularity": 46.624,
+        "release_date": "2019-12-06",
+        "video": false,
+        "vote_average": 6.179,
+        "vote_count": 1660
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/lzWHmYdfeFiMIY4JaMmtR7GEli3.jpg",
+        "id": 438631,
+        "title": "Dune",
+        "original_language": "en",
+        "original_title": "Dune",
+        "overview": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.",
+        "poster_path": "/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          878,
+          12
+        ],
+        "popularity": 715.692,
+        "release_date": "2021-09-15",
+        "video": false,
+        "vote_average": 7.787,
+        "vote_count": 10235
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/tsDoiLwZyAbYewoIUDJKk1SJzTF.jpg",
+        "id": 993784,
+        "title": "Lisa Frankenstein",
+        "original_language": "en",
+        "original_title": "Lisa Frankenstein",
+        "overview": "In 1989, a misunderstood teenager has a high school crush — who just happens to be a handsome corpse! After a set of playfully horrific circumstances bring him back to life, the two embark on a murderous journey to find love, happiness…and a few missing body parts along the way.",
+        "poster_path": "/mdPnNWU05ivcVp0rF2Dv9n5Maf4.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          35,
+          27,
+          10749
+        ],
+        "popularity": 86.366,
+        "release_date": "2024-02-07",
+        "video": false,
+        "vote_average": 6.261,
+        "vote_count": 44
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/yOm993lsJyPmBodlYjgpPwBjXP9.jpg",
+        "id": 787699,
+        "title": "Wonka",
+        "original_language": "en",
+        "original_title": "Wonka",
+        "overview": "Willy Wonka – chock-full of ideas and determined to change the world one delectable bite at a time – is proof that the best things in life begin with a dream, and if you’re lucky enough to meet Willy Wonka, anything is possible.",
+        "poster_path": "/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          35,
+          10751,
+          14
+        ],
+        "popularity": 818.783,
+        "release_date": "2023-12-06",
+        "video": false,
+        "vote_average": 7.21,
+        "vote_count": 2306
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
+        "id": 496243,
+        "title": "Parasite",
+        "original_language": "ko",
+        "original_title": "기생충",
+        "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+        "poster_path": "/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          35,
+          53,
+          18
+        ],
+        "popularity": 185.485,
+        "release_date": "2019-05-30",
+        "video": false,
+        "vote_average": 8.51,
+        "vote_count": 17182
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/iWzu3dVJGNfQUkLfK9xpTWoi5mh.jpg",
+        "id": 1139566,
+        "title": "Through My Window 3: Looking at You",
+        "original_language": "es",
+        "original_title": "A través de mi ventana 3: A través de tu mirada",
+        "overview": "After the events of the summer, Ares and Raquel they don't see a way forward in their relationship and decide to go separate ways. But when they meet again in the winter in Barcelona, the love and desire they feel for each other is undeniable. Will they be able to find a way to get back together?",
+        "poster_path": "/gwpTgtwVAwmvivBN8rAQABpx9Am.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          10749,
+          18,
+          35
+        ],
+        "popularity": 747.678,
+        "release_date": "2024-02-23",
+        "video": false,
+        "vote_average": 6.543,
+        "vote_count": 116
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nTPFkLUARmo1bYHfkfdNpRKgEOs.jpg",
+        "id": 1072790,
+        "title": "Anyone But You",
+        "original_language": "en",
+        "original_title": "Anyone But You",
+        "overview": "After an amazing first date, Bea and Ben’s fiery attraction turns ice cold — until they find themselves unexpectedly reunited at a destination wedding in Australia. So they do what any two mature adults would do: pretend to be a couple.",
+        "poster_path": "/yRt7MGBElkLQOYRvLTT1b3B1rcp.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          35,
+          10749
+        ],
+        "popularity": 1454.065,
+        "release_date": "2023-12-21",
+        "video": false,
+        "vote_average": 6.908,
+        "vote_count": 690
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/aPQsU3yLDUOhLJYnSqkhKRkQTAw.jpg",
+        "id": 467244,
+        "title": "The Zone of Interest",
+        "original_language": "en",
+        "original_title": "The Zone of Interest",
+        "overview": "The commandant of Auschwitz, Rudolf Höss, and his wife Hedwig, strive to build a dream life for their family in a house and garden next to the camp.",
+        "poster_path": "/hUu9zyZmDd8VZegKi1iK1Vk0RYS.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          36,
+          18,
+          10752
+        ],
+        "popularity": 244.786,
+        "release_date": "2023-12-15",
+        "video": false,
+        "vote_average": 7.37,
+        "vote_count": 473
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/dmiN2rakG9hZW04Xx7mHOoHTOyD.jpg",
+        "id": 673593,
+        "title": "Mean Girls",
+        "original_language": "en",
+        "original_title": "Mean Girls",
+        "overview": "New student Cady Heron is welcomed into the top of the social food chain by the elite group of popular girls called ‘The Plastics,’ ruled by the conniving queen bee Regina George and her minions Gretchen and Karen. However, when Cady makes the major misstep of falling for Regina’s ex-boyfriend Aaron Samuels, she finds herself prey in Regina’s crosshairs. As Cady sets to take down the group’s apex predator with the help of her outcast friends Janis and Damian, she must learn how to stay true to herself while navigating the most cutthroat jungle of all: high school.",
+        "poster_path": "/fbbj3viSUDEGT1fFFMNpHP1iUjw.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          35
+        ],
+        "popularity": 420.288,
+        "release_date": "2024-01-10",
+        "video": false,
+        "vote_average": 6.527,
+        "vote_count": 184
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+        "id": 872585,
+        "title": "Oppenheimer",
+        "original_language": "en",
+        "original_title": "Oppenheimer",
+        "overview": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
+        "poster_path": "/ptpr0kGAckfQkJeJIt8st5dglvd.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          18,
+          36
+        ],
+        "popularity": 398.354,
+        "release_date": "2023-07-19",
+        "video": false,
+        "vote_average": 8.116,
+        "vote_count": 6878
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/2GzgongTSptjSkT7iCoXUcGIVB9.jpg",
+        "id": 994108,
+        "title": "All of Us Strangers",
+        "original_language": "en",
+        "original_title": "All of Us Strangers",
+        "overview": "One night in his near-empty tower block in contemporary London, Adam has a chance encounter with a mysterious neighbor Harry, which punctures the rhythm of his everyday life. As a relationship develops between them, Adam is preoccupied with memories of the past and finds himself drawn back to the suburban town where he grew up, and the childhood home where his parents appear to be living, just as they were on the day they died, 30 years before.",
+        "poster_path": "/aviJMFZSnnCAsCVyJGaPNx4Ef3i.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          10749,
+          18,
+          14
+        ],
+        "popularity": 187.61,
+        "release_date": "2023-12-22",
+        "video": false,
+        "vote_average": 7.508,
+        "vote_count": 184
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/meyhnvssZOPPjud4F1CjOb4snET.jpg",
+        "id": 940551,
+        "title": "Migration",
+        "original_language": "en",
+        "original_title": "Migration",
+        "overview": "After a migrating duck family alights on their pond with thrilling tales of far-flung places, the Mallard family embarks on a family road trip, from New England, to New York City, to tropical Jamaica.",
+        "poster_path": "/ldfCF9RhR40mppkzmftxapaHeTo.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          16,
+          28,
+          12,
+          35,
+          10751
+        ],
+        "popularity": 1063.373,
+        "release_date": "2023-12-06",
+        "video": false,
+        "vote_average": 7.628,
+        "vote_count": 790
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/feSiISwgEpVzR1v3zv2n2AU4ANJ.jpg",
+        "id": 609681,
+        "title": "The Marvels",
+        "original_language": "en",
+        "original_title": "The Marvels",
+        "overview": "Carol Danvers, aka Captain Marvel, has reclaimed her identity from the tyrannical Kree and taken revenge on the Supreme Intelligence. But unintended consequences see Carol shouldering the burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree revolutionary, her powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol’s estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
+        "poster_path": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          878,
+          12,
+          28
+        ],
+        "popularity": 788.96,
+        "release_date": "2023-11-08",
+        "video": false,
+        "vote_average": 6.256,
+        "vote_count": 1911
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oBIQDKcqNxKckjugtmzpIIOgoc4.jpg",
+        "id": 969492,
+        "title": "Land of Bad",
+        "original_language": "en",
+        "original_title": "Land of Bad",
+        "overview": "When a Delta Force special ops mission goes terribly wrong, Air Force drone pilot Reaper has 48 hours to remedy what has devolved into a wild rescue operation. With no weapons and no communication other than the drone above, the ground mission suddenly becomes a full-scale battle when the team is discovered by the enemy.",
+        "poster_path": "/h3jYanWMEJq6JJsCopy1h7cT2Hs.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          28,
+          53,
+          10752
+        ],
+        "popularity": 1740.935,
+        "release_date": "2024-01-25",
+        "video": false,
+        "vote_average": 6.988,
+        "vote_count": 204
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/bckxSN9ueOgm0gJpVJmPQrecWul.jpg",
+        "id": 572802,
+        "title": "Aquaman and the Lost Kingdom",
+        "original_language": "en",
+        "original_title": "Aquaman and the Lost Kingdom",
+        "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Aquaman forges an alliance with his imprisoned brother. They must protect the kingdom.",
+        "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          28,
+          12,
+          14
+        ],
+        "popularity": 564.639,
+        "release_date": "2023-12-20",
+        "video": false,
+        "vote_average": 6.869,
+        "vote_count": 1838
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/3mpgltEMgPf8zFtPnAWdDVN8ZT1.jpg",
+        "id": 1056360,
+        "title": "American Fiction",
+        "original_language": "en",
+        "original_title": "American Fiction",
+        "overview": "A novelist fed up with the establishment profiting from \"Black\" entertainment uses a pen name to write a book that propels him into the heart of hypocrisy and the madness he claims to disdain.",
+        "poster_path": "/57MFWGHarg9jid7yfDTka4RmcMU.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          35,
+          18
+        ],
+        "popularity": 98.561,
+        "release_date": "2023-11-10",
+        "video": false,
+        "vote_average": 7.285,
+        "vote_count": 267
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/9mrSx9MVmNOOlvcPxDTdf1APzud.jpg",
+        "id": 1216221,
+        "title": "Demon Slayer: Kimetsu no Yaiba -To the Hashira Training-",
+        "original_language": "ja",
+        "original_title": "ワールドツアー上映『鬼滅の刃』絆の奇跡、そして柱稽古へ",
+        "overview": "A compilation film featuring the eleventh episode of the Swordsmith Village Arc and the first episode of the Hashira Training Arc.",
+        "poster_path": "/3daOEMQCOGU2n9EbUC0PICnUCek.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          16,
+          28,
+          14
+        ],
+        "popularity": 1041.732,
+        "release_date": "2024-02-02",
+        "video": true,
+        "vote_average": 5.829,
+        "vote_count": 41
+      }
+    ],
+    "total_pages": 1000,
+    "total_results": 20000
+  }

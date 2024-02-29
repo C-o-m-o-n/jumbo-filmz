@@ -16,12 +16,12 @@ function Navbar() {
 
 
             <div className="relative pl-3 my-5">
-            <div className="flex items-center -mt-3 justify-between px-8 py-5">
-                <div className="flex items-center mr-5">
+            <div className="flex items-center -mt-3 justify-between px-1 py-3">
+                <div className="flex items-center">
 
                     <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                        {/* <Image src="https://flowbite.com/docs/images/logo.svg" className="h-8" width={100} height={100} alt="JUMBO FILMZ Logo" /> */}
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">JUMBO FILMZ</span>
+                        <Image src="/jumbofilmz.jpeg" className="rounded-full w-[40px] h-[40px]" width={150} height={150} alt="JUMBO FILMZ Logo" />
+                        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">JUMBO FILMZ</span>
                     </Link>
                 </div>
             </div>
