@@ -1,10 +1,27 @@
+"use client"
+
 import Image from "next/image";
+import Link from 'next/link'
 import { UserButton } from "@clerk/nextjs";
 import TopNav from "../components/TopNav";
 import { MdOutlinePlaylistAdd } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaEye } from "react-icons/fa";
-import Link from 'next/link'
+import MovieList from "../components/MovieList";
+
+const discoverUrl = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc"
+const trendingUrl = "https://api.themoviedb.org/3/trending/movie/day?language=en-US"
+
+function trendingTrailerBtn() {
+  return (
+    <div className='flex flex-row items-center mt-3 w-[100px] transition-all duration-300 ease-in-out bg-[#b70000] rounded-3xl'>
+      <FaEye size={25} className='ml-3' />
+      <span className="select-none flex items-center px-3 py-2 cursor-pointer rounded-[.95rem]">
+        <Link href="javascript:;" className="flex items-center flex-grow hover:text-white">Trailer</Link>
+      </span>
+    </div>
+  )
+}
 
 export default function Home() {
   return (
@@ -47,66 +64,25 @@ export default function Home() {
           <p>Check These out</p>
             <Link className="flex flex-row items-center" href='/'><p>All</p> <IoIosArrowForward /></Link>
           </div>
-          
-          <div className="flex flex-row w-[270px] h-[100px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-5">
-            <Image className="rounded" src="/assets/jack-reacher.jpeg" width={60} height={10} />
-            <div className="flex flex-col justify-center items-ceter">
-              <p className="font-semibold text-[0.95rem] uppercase">Jack Reacher</p>
-              <p >Tom Cruise</p>
-            </div>
-          </div>
 
-          <div className="flex flex-row w-[270px] h-[100px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-5">
-            <Image className="rounded" src="/assets/dismissed.jpeg" width={60} height={10} />
-            <div className="flex flex-col justify-center items-ceter">
-              <p className="font-semibold text-[0.95rem] uppercase">dismissed</p>
-              <p >Tom Cruise</p>
-            </div>
-          </div>
-
-          <div className="flex flex-row w-[270px] h-[100px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-5">
-            <Image className="rounded" src="/assets/avatar1.jpeg" width={60} height={10} />
-            <div className="flex flex-col justify-center items-ceter">
-              <p className="font-semibold text-[0.95rem] uppercase">Avatar Way of water</p>
-              <p >Tom Cruise</p>
-            </div>
-          </div>
-
+         <MovieList urlType={trendingUrl} trendingTrailerBtn={trendingTrailerBtn} divStyle={"flex flex-row w-[270px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-3"} imageStyle={"rounded w-[60px] h-[100px]"}  customStyle={'flex flex-col gap-3 justify-center items-ceter hide-scrollbar overflow-x-scroll  w-full'} limit={3} />
+         
         </div>
       </div>
 
 <div className="mt-5 ">
 <div className="flex flex-row items-ceter justify-between">
-            <p>Trending</p>
-            <Link className="flex flex-row items-center" href='/'><p>All</p> <IoIosArrowForward /></Link>
+            <p>Discover</p>
+            <Link className="flex flex-row items-center" href='/movies/discover'><p>All</p> <IoIosArrowForward /></Link>
           </div>
+
+
+          <MovieList urlType={discoverUrl} imageStyle={"rounded w-full h-full"} customStyle={'flex flex-row gap-3 justify-center hide-scrollbar overflow-x-scroll items-ceter w-full'} limit={6} />
+
       <div className="flex flex-row items-ceter justify-between gap-3 mt-5">
 
 
-      <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e]">
-        <Image className="rounded w-full h-full" src="/assets/jrngb.jpg" width={60} height={10} />
-        {/* <p className="">Ant Man Quantamania</p> */}
-      </div>
-      <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
-        <Image className="rounded w-full h-full" src="/assets/quantamania.jpg" width={60} height={10} />
-        {/* <p className="">Ant Man Quantamania</p> */}
-      </div>
-      <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
-        <Image className="rounded w-full h-full" src="/assets/onward.jpeg" width={60} height={10} />
-        {/* <p className="">Ant Man Quantamania</p> */}
-      </div>
-      <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
-        <Image className="rounded w-full h-full" src="/assets/a-bugs-life.jpeg" width={60} height={10} />
-        {/* <p className="">Ant Man Quantamania</p> */}
-      </div>
-      <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
-        <Image className="rounded w-full h-full" src="/assets/brahmastra.jpg" width={60} height={10} />
-        {/* <p className="">Ant Man Quantamania</p> */}
-      </div>
-      <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
-        <Image className="rounded w-full h-full" src="/assets/avatar3.jpeg" width={60} height={10} />
-        {/* <p className="">Ant Man Quantamania</p> */}
-      </div>
+
       </div>
 </div>
 

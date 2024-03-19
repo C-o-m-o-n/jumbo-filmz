@@ -5,33 +5,16 @@ import { MdOutlinePlaylistAdd } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaEye } from "react-icons/fa";
 import Link from 'next/link'
-import { useEffect, useState } from "react";
+
+
 
 export default function Movies() {
-    const [ApiResponse, setApiResponse] = useState([])
 
 
-    useEffect(()=>{
-        const options = {
-            method: 'GET',
-            headers: {
-              accept: 'application/json',
-              Authorization: `Bearer ${process.env.TMDB_ACCESS_TOKEN}`
-            }
-          };
-          
-          fetch('https://api.themoviedb.org/3/trending/movie/day?language=en-US', options)
-            .then(response => response.json())
-            .then(response => {
-                setApiResponse(response.results);
-                console.log(response)})
-            .catch(err => console.error(err));
-    },[])
-
-  return (
-    <main className="flex min-h-screen flex-col items-start md:ml-[210px] md:mt-[80px]">
-      {/* <TopNav /> */}
-      <div className="flex flex-row gap-5">
+    return(
+    <main className = "flex min-h-screen flex-col items-start md:ml-[210px] md:mt-[80px]" >
+        {/* <TopNav /> */ }
+        < div className = "flex flex-row gap-5" >
         <div className="relative">
           <Image className="md:rounded-2xl w-[700px] h-[400px]" src="/assets/spider-verse.jpg" width={700} height={250} />
 
@@ -94,44 +77,45 @@ export default function Movies() {
           </div>
 
         </div>
+      </div >
+
+    <div className="mt-5 ">
+      <div className="flex flex-row items-ceter justify-between">
+        <p>Trending</p>
+        <Link className="flex flex-row items-center" href='/'><p>All</p> <IoIosArrowForward /></Link>
       </div>
 
-<div className="mt-5 ">
-<div className="flex flex-row items-ceter justify-between">
-            <p>Trending</p>
-            <Link className="flex flex-row items-center" href='/'><p>All</p> <IoIosArrowForward /></Link>
-          </div>
       <div className="flex flex-row items-ceter justify-between gap-3 mt-5">
 
 
-      <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e]">
-        <Image className="rounded w-full h-full" src="/assets/jrngb.jpg" width={60} height={10} />
-        
+        <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e]">
+          <Image className="rounded w-full h-full" src="/assets/jrngb.jpg" width={60} height={10} />
+
+        </div>
+        <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
+          <Image className="rounded w-full h-full" src="/assets/quantamania.jpg" width={60} height={10} />
+
+        </div>
+        <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
+          <Image className="rounded w-full h-full" src="/assets/onward.jpeg" width={60} height={10} />
+
+        </div>
+        <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
+          <Image className="rounded w-full h-full" src="/assets/a-bugs-life.jpeg" width={60} height={10} />
+
+        </div>
+        <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
+          <Image className="rounded w-full h-full" src="/assets/brahmastra.jpg" width={60} height={10} />
+
+        </div>
+        <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
+          <Image className="rounded w-full h-full" src="/assets/avatar3.jpeg" width={60} height={10} />
+
+        </div>
       </div>
-      <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
-        <Image className="rounded w-full h-full" src="/assets/quantamania.jpg" width={60} height={10} />
-        
-      </div>
-      <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
-        <Image className="rounded w-full h-full" src="/assets/onward.jpeg" width={60} height={10} />
-        
-      </div>
-      <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
-        <Image className="rounded w-full h-full" src="/assets/a-bugs-life.jpeg" width={60} height={10} />
-        
-      </div>
-      <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
-        <Image className="rounded w-full h-full" src="/assets/brahmastra.jpg" width={60} height={10} />
-        
-      </div>
-      <div className="flex flex-col w-[155px] gap-3 justify-center items-ceter rounded-2xl bg-[#23252e] mt-3">
-        <Image className="rounded w-full h-full" src="/assets/avatar3.jpeg" width={60} height={10} />
-        
-      </div>
-      </div>
-</div>
+    </div>
 
 
-    </main>
+    </main >
   );
 }
