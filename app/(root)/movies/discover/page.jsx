@@ -43,8 +43,8 @@ function Discover() {
 
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
        {ApiResponse && ApiResponse.map((movie) => (
-    <div class="grid gap-4">
-        <div key={movie.id}>
+    <div key={movie.id} class="grid gap-4">
+        <div>
             <img class="h-auto max-w-full rounded-lg" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt=""/>
         <h2 className='text-center'>{movie.title}</h2>
         </div>
