@@ -69,25 +69,26 @@ export default function Home() {
 
 
       {/* <TopNav /> */}
+
       <div className="flex flex-row gap-5">
-        <div className="relative">
+        <div className="mt-20 md:mt-auto h-auto relative">
           {/* <Image className="md:rounded-2xl w-[700px] h-[400px]" src="/assets/spider-verse.jpg" width={700} height={250} /> */}
           {randomMovie && (
             <>
               <img
-                className="md:rounded-2xl w-[700px] h-[400px]"
+                className="w-screen md:rounded-2xl w-auto md:w-full h-auto md:h-[400px]"
                 src={`https://image.tmdb.org/t/p/w500/${randomMovie.backdrop_path}`}
                 alt=""
               />
           {/* banner overlay */}
-          <div className="absolute md:rounded-2xl bg-[black] opacity-50 h-full top-0 w-full"></div>
+          <div className="absolute md:rounded-2xl bg-[black] opacity-50 h-full top-0  w-full">
           <div>
-            <div className="absolute ml-12  top-[150px] md:top-[200px] flex flex-col justify-center items-ceter">
-              <p className="font-bold text-[18px] text-[#efefef] md:text-[20px] uppercase">{randomMovie.title}</p>
-              <p className="text-left text-[#efefef]">{randomMovie.overview}.</p>
+            <div className="absolute md:ml-12 top-[100px] md:top-[200px] flex flex-col justify-center items-ceter">
+              <p className=" text-left  font-bold text-[18px] text-[#efefef] md:text-[20px] uppercase">{randomMovie.title}</p>
+              {/* <p className="text-center md:text-left text-[#efefef]">{randomMovie.overview}.</p> */}
 
 
-              <div className="flex flex-row items-center mt-3 gap-3">
+              <div className="flex flex-row items-center md:mt-3 gap-3">
                 <div className='flex flex-row items-center w-[132px] transition-all duration-300 ease-in-out bg-[#b70000] rounded-3xl'>
                   <FaEye size={25} className='ml-3' />
                   <span className="select-none flex items-center px-4 py-2 cursor-pointer my-[.4rem] rounded-[.95rem]">
@@ -103,7 +104,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
           </div>
+          </div>
+
 
             </>
           )}
@@ -113,21 +117,21 @@ export default function Home() {
 
         <div className="hidden md:block">
           {Loading == false && (
-            <div className="flex flex-row items-ceter justify-between">
+            <div className="hidden md:flex flex-row items-ceter justify-between">
             <p>Trending</p>
             <Link className="flex flex-row items-center" href='/movies/trending'><p>All</p> <IoIosArrowForward /></Link>
           </div>
           )}
 
-          <MovieList urlType={trendingUrl} trendingTrailerBtn={trendingTrailerBtn} divStyle={"flex flex-row w-[270px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-3"} imageStyle={"rounded w-[60px] h-[100px]"} customStyle={'flex flex-col gap-3 justify-center items-ceter hide-scrollbar overflow-x-scroll  w-full'} limit={3} />
+          <MovieList urlType={trendingUrl} trendingTrailerBtn={trendingTrailerBtn} divStyle={"flex flex-row w-[270px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-3"} imageStyle={"rounded w-[60px] h-[100px]"} customStyle={'hidden md:flex flex-col gap-3 justify-center items-center w-auto md:w-full'} limit={3} />
 
         </div>
       </div>
 
-      <div className="mt-5 ">
+      <div className="w-auto mt-5 ">
         {
           Loading == false && (
-            <div className="flex flex-row items-ceter justify-between">
+            <div className="hidden md:flex flex-row items-ceter justify-between">
           <p>Discover</p>
           <Link className="flex flex-row items-center" href='/movies/discover'><p>All</p> <IoIosArrowForward /></Link>
         </div>
@@ -135,7 +139,8 @@ export default function Home() {
         }
 
 
-        <MovieList urlType={discoverUrl} imageStyle={"rounded w-full h-full"} customStyle={'flex flex-row gap-3 justify-center hide-scrollbar overflow-x-scroll items-ceter w-full'} limit={6} />
+<MovieList urlType={discoverUrl} imageStyle={" rounded w-full h-full"} customStyle={'hidden md:flex flex-row gap-3 justify-center items-ceter md:w-full'} limit={6} />
+{/* <MovieList urlType={discoverUrl} imageStyle={" rounded w-[300px] h-full"} customStyle={'flex flex-row gap-2 justify-center items-ceter w-full xsm:hidden md:hidden'} limit={2} /> */}
 
         <div className="flex flex-row items-ceter justify-between gap-3 mt-5">
 

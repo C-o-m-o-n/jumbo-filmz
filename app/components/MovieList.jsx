@@ -51,6 +51,8 @@ const MovieList = ({ urlType, imageStyle, trendingTrailerBtn, divStyle, customSt
 
         ))}
       </div>
+
+      
     </>
   );
 };
