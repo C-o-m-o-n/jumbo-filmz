@@ -61,8 +61,8 @@ export default function Home() {
 
         <div className="hidden md:block">
           <div className="flex flex-row items-ceter justify-between">
-          <p>Check These out</p>
-            <Link className="flex flex-row items-center" href='/'><p>All</p> <IoIosArrowForward /></Link>
+          <p>Trending</p>
+            <Link className="flex flex-row items-center" href='/movies/trending'><p>All</p> <IoIosArrowForward /></Link>
           </div>
 
          <MovieList urlType={trendingUrl} trendingTrailerBtn={trendingTrailerBtn} divStyle={"flex flex-row w-[270px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-3"} imageStyle={"rounded w-[60px] h-[100px]"}  customStyle={'flex flex-col gap-3 justify-center items-ceter hide-scrollbar overflow-x-scroll  w-full'} limit={3} />
