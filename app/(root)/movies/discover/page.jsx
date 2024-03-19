@@ -21,7 +21,7 @@ function Discover() {
           method: "GET",
           url: discoverUrl,
           headers: {
-            Authorization: `Bearer ${process.env.TMDB_ACCESS_TOKEN}`,
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_ACCESS_TOKEN}`,
           },
         });
 
