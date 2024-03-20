@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 // https://api.themoviedb.org/3/trending/movie/day?language=en-US
 
-const MovieList = ({ urlType, imageStyle, trendingTrailerBtn, divStyle, customStyle, limit }) => {
+const MovieList = ({ urlType, showName, tvshows,  imageStyle, trendingTrailerBtn, divStyle, customStyle, limit }) => {
   const [ApiResponse, setApiResponse] = useState([])
 
   useEffect(() => {
@@ -43,7 +43,10 @@ const MovieList = ({ urlType, imageStyle, trendingTrailerBtn, divStyle, customSt
             <img className={imageStyle} src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} 
             alt={movie.title} width={60} height={10} />
             <div>
-            <h2 className='text-center'>{movie.title}</h2>
+
+            {showName == true ? (<h2 className='text-center'>
+              {tvshows == true ? movie.name : movie.title }
+              </h2>) : null}
               {trendingTrailerBtn && trendingTrailerBtn()}
               </div>
 

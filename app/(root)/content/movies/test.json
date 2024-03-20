@@ -3,403 +3,455 @@
   "results": [
     {
       "adult": false,
-      "backdrop_path": "/deLWkOLZmBNkm8p16igfapQyqeq.jpg",
-      "genre_ids": [
-        14,
-        12,
-        28
-      ],
-      "id": 763215,
+      "backdrop_path": "/5zmiBoMzeeVdQ62no55JOJMY498.jpg",
+      "id": 126308,
+      "name": "Shōgun",
       "original_language": "en",
-      "original_title": "Damsel",
-      "overview": "A young woman's marriage to a charming prince turns into a fierce fight for survival when she's offered up as a sacrifice to a fire-breathing dragon.",
-      "popularity": 1986.779,
-      "poster_path": "/sMp34cNKjIb18UBOCoAv4DpCxwY.jpg",
-      "release_date": "2024-03-08",
-      "title": "Damsel",
-      "video": false,
-      "vote_average": 7.3,
-      "vote_count": 723
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
-      "genre_ids": [
-        28,
-        12,
-        16,
-        35,
-        10751
-      ],
-      "id": 1011985,
-      "original_language": "en",
-      "original_title": "Kung Fu Panda 4",
-      "overview": "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
-      "popularity": 1929.496,
-      "poster_path": "/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg",
-      "release_date": "2024-03-02",
-      "title": "Kung Fu Panda 4",
-      "video": false,
-      "vote_average": 6.923,
-      "vote_count": 124
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/xvk5AhfhgQcTuaCQyq3XqAnhEma.jpg",
-      "genre_ids": [
-        28,
-        12,
-        35
-      ],
-      "id": 848538,
-      "original_language": "en",
-      "original_title": "Argylle",
-      "overview": "When the plots of reclusive author Elly Conway's fictional espionage novels begin to mirror the covert actions of a real-life spy organization, quiet evenings at home become a thing of the past. Accompanied by her cat Alfie and Aiden, a cat-allergic spy, Elly races across the world to stay one step ahead of the killers as the line between Conway's fictional world and her real one begins to blur.",
-      "popularity": 1410.325,
-      "poster_path": "/95VlSEfLMqeX36UVcHJuNlWEpwf.jpg",
-      "release_date": "2024-01-31",
-      "title": "Argylle",
-      "video": false,
-      "vote_average": 6.117,
-      "vote_count": 558
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/cu5Qk2QHxOyyMrD3Bq93DxgmJer.jpg",
-      "genre_ids": [
-        28,
-        80
-      ],
-      "id": 1046090,
-      "original_language": "zh",
-      "original_title": "周處除三害",
-      "overview": "The arrogant, third most-wanted criminal in Taiwan, decides to get rid of the top two competitors and crowns himself the most-wanted criminal before dying.",
-      "popularity": 1246.708,
-      "poster_path": "/7IJ7F8tX7IAkpUdaGovOBJqORnJ.jpg",
-      "release_date": "2023-10-06",
-      "title": "The Pig, the Snake and the Pigeon",
-      "video": false,
-      "vote_average": 7.598,
-      "vote_count": 82
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/mDeUmPe4MF35WWlAqj4QFX5UauJ.jpg",
-      "genre_ids": [
-        28,
-        27,
-        53
-      ],
-      "id": 1096197,
-      "original_language": "pt",
-      "original_title": "No Way Up",
-      "overview": "Characters from different backgrounds are thrown together when the plane they're travelling on crashes into the Pacific Ocean. A nightmare fight for survival ensues with the air supply running out and dangers creeping in from all sides.",
-      "popularity": 1202.061,
-      "poster_path": "/hu40Uxp9WtpL34jv3zyWLb5zEVY.jpg",
-      "release_date": "2024-01-18",
-      "title": "No Way Up",
-      "video": false,
-      "vote_average": 6.071,
-      "vote_count": 226
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/o6e8Y0Q7RZIWi4qcJq4s5OYOVJs.jpg",
-      "genre_ids": [
-        878,
-        10749,
-        35
-      ],
-      "id": 792307,
-      "original_language": "en",
-      "original_title": "Poor Things",
-      "overview": "Brought back to life by an unorthodox scientist, a young woman runs off with a debauched lawyer on a whirlwind adventure across the continents. Free from the prejudices of her times, she grows steadfast in her purpose to stand for equality and liberation.",
-      "popularity": 1150.148,
-      "poster_path": "/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg",
-      "release_date": "2023-12-07",
-      "title": "Poor Things",
-      "video": false,
-      "vote_average": 7.893,
-      "vote_count": 2285
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/8uVKfOJUhmybNsVh089EqLHUYEG.jpg",
-      "genre_ids": [
-        878,
-        12
-      ],
-      "id": 693134,
-      "original_language": "en",
-      "original_title": "Dune: Part Two",
-      "overview": "Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, Paul endeavors to prevent a terrible future only he can foresee.",
-      "popularity": 988.989,
-      "poster_path": "/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg",
-      "release_date": "2024-02-27",
-      "title": "Dune: Part Two",
-      "video": false,
-      "vote_average": 8.421,
-      "vote_count": 1643
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/47olX0FCvUCfAqlp8cK0O5fKLav.jpg",
-      "genre_ids": [
-        16,
-        35,
-        878
-      ],
-      "id": 1239251,
-      "original_language": "en",
-      "original_title": "Megamind vs. the Doom Syndicate",
-      "overview": "Megamind's former villain team, The Doom Syndicate, has returned. Our newly crowned blue hero must now keep up evil appearances until he can assemble his friends (Roxanne, Ol' Chum and Keiko) to stop his former evil teammates from launching Metro City to the Moon.",
-      "popularity": 994.139,
-      "poster_path": "/1N7terrMeZPwK5qq31MUD0HQ3IG.jpg",
-      "release_date": "2024-03-01",
-      "title": "Megamind vs. the Doom Syndicate",
-      "video": false,
-      "vote_average": 5.64,
-      "vote_count": 114
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/ekRp1sEA8pnuzVHQkUESTgNSKdW.jpg",
-      "genre_ids": [
-        878,
-        28,
-        80
-      ],
-      "id": 932420,
-      "original_language": "en",
-      "original_title": "Code 8 Part II",
-      "overview": "In a world where superpowered people are heavily policed by robots, an ex-con teams up with a drug lord he despises to protect a teen from a corrupt cop.",
-      "popularity": 908.109,
-      "poster_path": "/hhvMTxlTZtnCOe7YFhod9uz3m37.jpg",
-      "release_date": "2024-02-27",
-      "title": "Code 8 Part II",
-      "video": false,
-      "vote_average": 6.644,
-      "vote_count": 278
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+      "original_name": "Shōgun",
+      "overview": "In Japan in the year 1600, at the dawn of a century-defining civil war, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
+      "poster_path": "/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+      "media_type": "tv",
       "genre_ids": [
         18,
-        36
+        10768
       ],
-      "id": 872585,
-      "original_language": "en",
-      "original_title": "Oppenheimer",
-      "overview": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
-      "popularity": 698.976,
-      "poster_path": "/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
-      "release_date": "2023-07-19",
-      "title": "Oppenheimer",
-      "video": false,
-      "vote_average": 8.118,
-      "vote_count": 7163
+      "popularity": 1972.529,
+      "first_air_date": "2024-02-27",
+      "vote_average": 8.8,
+      "vote_count": 258,
+      "origin_country": [
+        "US"
+      ]
     },
     {
       "adult": false,
-      "backdrop_path": "/ybn3jCia5XBD0ZgEM07gcUPuRNh.jpg",
+      "backdrop_path": "/rhoTlTzHwzMnPIukqURnnCLty0r.jpg",
+      "id": 138502,
+      "name": "X-Men '97",
+      "original_language": "en",
+      "original_name": "X-Men '97",
+      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+      "poster_path": "/cVlBAB0nFEQxwuyn1mTfrGjqXuw.jpg",
+      "media_type": "tv",
       "genre_ids": [
         16,
-        12,
-        14
+        10759,
+        10765
       ],
-      "id": 508883,
-      "original_language": "ja",
-      "original_title": "君たちはどう生きるか",
-      "overview": "While the Second World War rages, the teenage Mahito, haunted by his mother's tragic death, is relocated from Tokyo to the serene rural home of his new stepmother Natsuko, a woman who bears a striking resemblance to the boy's mother. As he tries to adjust, this strange new world grows even stranger following the appearance of a persistent gray heron, who perplexes and bedevils Mahito, dubbing him the \"long-awaited one.\"",
-      "popularity": 510.436,
-      "poster_path": "/f4oZTcfGrVTXKTWg157AwikXqmP.jpg",
-      "release_date": "2023-07-14",
-      "title": "The Boy and the Heron",
-      "video": false,
-      "vote_average": 7.445,
-      "vote_count": 1091
+      "popularity": 151.704,
+      "first_air_date": "2024-03-20",
+      "vote_average": 7,
+      "vote_count": 2,
+      "origin_country": [
+        "US"
+      ]
     },
     {
       "adult": false,
-      "backdrop_path": "/oBIQDKcqNxKckjugtmzpIIOgoc4.jpg",
-      "genre_ids": [
-        28,
-        53,
-        10752
-      ],
-      "id": 969492,
+      "backdrop_path": "/6snBXmgkscLEJQmxx46qEIlqYlB.jpg",
+      "id": 46518,
+      "name": "Masters of the Air",
       "original_language": "en",
-      "original_title": "Land of Bad",
-      "overview": "When a Delta Force special ops mission goes terribly wrong, Air Force drone pilot Reaper has 48 hours to remedy what has devolved into a wild rescue operation. With no weapons and no communication other than the drone above, the ground mission suddenly becomes a full-scale battle when the team is discovered by the enemy.",
-      "popularity": 755.459,
-      "poster_path": "/lYwjlcBjokC9EhfzfAOkTMQd5Ku.jpg",
-      "release_date": "2024-01-25",
-      "title": "Land of Bad",
-      "video": false,
-      "vote_average": 6.953,
-      "vote_count": 338
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/meyhnvssZOPPjud4F1CjOb4snET.jpg",
+      "original_name": "Masters of the Air",
+      "overview": "During World War II, airmen risk their lives with the 100th Bomb Group, a brotherhood forged by courage, loss, and triumph.",
+      "poster_path": "/rSAmgcoA74371rplbqM27yVsd3y.jpg",
+      "media_type": "tv",
       "genre_ids": [
-        16,
-        28,
-        12,
-        35,
-        10751
-      ],
-      "id": 940551,
-      "original_language": "en",
-      "original_title": "Migration",
-      "overview": "After a migrating duck family alights on their pond with thrilling tales of far-flung places, the Mallard family embarks on a family road trip, from New England, to New York City, to tropical Jamaica.",
-      "popularity": 724.006,
-      "poster_path": "/ldfCF9RhR40mppkzmftxapaHeTo.jpg",
-      "release_date": "2023-12-06",
-      "title": "Migration",
-      "video": false,
-      "vote_average": 7.556,
-      "vote_count": 930
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/nTPFkLUARmo1bYHfkfdNpRKgEOs.jpg",
-      "genre_ids": [
-        35,
-        10749
-      ],
-      "id": 1072790,
-      "original_language": "en",
-      "original_title": "Anyone But You",
-      "overview": "After an amazing first date, Bea and Ben’s fiery attraction turns ice cold — until they find themselves unexpectedly reunited at a destination wedding in Australia. So they do what any two mature adults would do: pretend to be a couple.",
-      "popularity": 643.333,
-      "poster_path": "/5qHoazZiaLe7oFBok7XlUhg96f2.jpg",
-      "release_date": "2023-12-21",
-      "title": "Anyone But You",
-      "video": false,
-      "vote_average": 7.042,
-      "vote_count": 982
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/oFAukXiMPrwLpbulGmB5suEZlrm.jpg",
-      "genre_ids": [
-        28,
-        12,
-        878,
-        14,
+        10768,
         18
       ],
-      "id": 624091,
-      "original_language": "id",
-      "original_title": "Sri Asih",
-      "overview": "Alana discover the truth about her origin: she’s not an ordinary human being. She may be the gift for humanity and become its protector as Sri Asih. Or a destruction, if she can’t control her anger.",
-      "popularity": 869.431,
-      "poster_path": "/wShcJSKMFg1Dy1yq7kEZuay6pLS.jpg",
-      "release_date": "2022-11-17",
-      "title": "Sri Asih",
-      "video": false,
-      "vote_average": 6.327,
-      "vote_count": 26
+      "popularity": 480.665,
+      "first_air_date": "2024-01-25",
+      "vote_average": 7.949,
+      "vote_count": 187,
+      "origin_country": [
+        "US"
+      ]
     },
     {
       "adult": false,
-      "backdrop_path": "/lzWHmYdfeFiMIY4JaMmtR7GEli3.jpg",
+      "backdrop_path": "/dvvNSbBzasANNbj2U2leKcBtklL.jpg",
+      "id": 207668,
+      "name": "The Legend of ShenLi",
+      "original_language": "zh",
+      "original_name": "与凤行",
+      "overview": "The ancient gods died, and there is only one last god in the world - Xingzhi. Rumor has it that this God of Action has lived alone in the heavens for tens of thousands of years, ruthless and lustless. In the battle of the immortals and demons, he turned the tide by himself, and since then, Du Men has been swept away, and his traces are hard to find.\n\nHundreds of years are just a click away. As the queen who was born with a pearl in the devil world, Shen Li's life was bright and dazzling. But on the occasion of her thousand-year-old birthday, the claws of political marriage were scratching their heads. On the way to escape from the marriage, Shen Li was beaten back to the original form of a phoenix and fell to the world with injuries. When she was seriously injured and comatose, the mortal hawker treated her as a fat chicken, plucked all the hair from her body, and locked her in a cage for sale.\n\nThe fate of the two is tightly linked by a seemingly casual transaction.",
+      "poster_path": "/cVlSN6xr9IsTwRSNvZqkLg8ZLnl.jpg",
+      "media_type": "tv",
       "genre_ids": [
-        878,
-        12
+        18,
+        10765
       ],
-      "id": 438631,
-      "original_language": "en",
-      "original_title": "Dune",
-      "overview": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.",
-      "popularity": 538.786,
-      "poster_path": "/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
-      "release_date": "2021-09-15",
-      "title": "Dune",
-      "video": false,
-      "vote_average": 7.788,
-      "vote_count": 10749
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/hIUs8RzKlrzgbWxn2EpWmiTFqCc.jpg",
-      "genre_ids": [
-        878,
-        53
-      ],
-      "id": 870404,
-      "original_language": "en",
-      "original_title": "Meteor",
-      "overview": "After a meteor collides into Earth, a lonely rancher and a lost young girl are on the run from vicious mercenaries.",
-      "popularity": 590.553,
-      "poster_path": "/tVMddOS5bi3YPVPgTPlEw0TOWoF.jpg",
-      "release_date": "2021-09-01",
-      "title": "Meteor",
-      "video": false,
+      "popularity": 123.606,
+      "first_air_date": "2024-03-18",
       "vote_average": 5.5,
-      "vote_count": 81
+      "vote_count": 2,
+      "origin_country": [
+        "CN"
+      ]
     },
     {
       "adult": false,
-      "backdrop_path": "/wqmemsQb8xcLVQkwt8WTYnMIYms.jpg",
+      "backdrop_path": "/zW0v2YT74C6tRafzqqBkfSqLAN0.jpg",
+      "id": 52814,
+      "name": "Halo",
+      "original_language": "en",
+      "original_name": "Halo",
+      "overview": "Depicting an epic 26th-century conflict between humanity and an alien threat known as the Covenant, the series weaves deeply drawn personal stories with action, adventure and a richly imagined vision of the future.",
+      "poster_path": "/hmHA5jqxN3ESIAGx0jAwV7TJhTQ.jpg",
+      "media_type": "tv",
       "genre_ids": [
-        28,
+        10759,
+        10765
+      ],
+      "popularity": 2326.026,
+      "first_air_date": "2022-03-24",
+      "vote_average": 8.334,
+      "vote_count": 2430,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4dUTs2xkExkG3yKPNzxgGwRX6NF.jpg",
+      "id": 157367,
+      "name": "Palm Royale",
+      "original_language": "en",
+      "original_name": "Palm Royale",
+      "overview": "In 1969, an ambitious woman aspires to cross the line between the haves and have-nots to secure her seat at America's most exclusive, fashionable, and treacherous table: Palm Beach high society.",
+      "poster_path": "/7WcJLCS31BiVYgvnh19lOjZoiiZ.jpg",
+      "media_type": "tv",
+      "genre_ids": [
         35
       ],
-      "id": 1217409,
-      "original_language": "es",
-      "original_title": "Jaque Mate",
-      "overview": "Duque, an international secret agent who retired years ago after a traumatic event, is forced to return to action when a commando operative kidnaps his niece and forces him to steal a precious scientific formula as part of the ransom.",
-      "popularity": 569.154,
-      "poster_path": "/26VzK0GVAsZhVXIbv3qDKiwBYud.jpg",
-      "release_date": "2024-01-25",
-      "title": "Jaque Mate",
-      "video": false,
-      "vote_average": 4.6,
-      "vote_count": 6
+      "popularity": 46.913,
+      "first_air_date": "2024-03-19",
+      "vote_average": 10,
+      "vote_count": 1,
+      "origin_country": [
+        "US"
+      ]
     },
     {
       "adult": false,
-      "backdrop_path": "/yyFc8Iclt2jxPmLztbP617xXllT.jpg",
+      "backdrop_path": "/PqIW7PA74YBURz5slZkxc0K5Pl.jpg",
+      "id": 236235,
+      "name": "The Gentlemen",
+      "original_language": "en",
+      "original_name": "The Gentlemen",
+      "overview": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire — and its proprietors aren't going anywhere.",
+      "poster_path": "/tw3tzfXaSpmUZIB8ZNqNEGzMBCy.jpg",
+      "media_type": "tv",
       "genre_ids": [
         35,
-        10751,
-        14
+        18,
+        10759,
+        80
       ],
-      "id": 787699,
-      "original_language": "en",
-      "original_title": "Wonka",
-      "overview": "Willy Wonka – chock-full of ideas and determined to change the world one delectable bite at a time – is proof that the best things in life begin with a dream, and if you’re lucky enough to meet Willy Wonka, anything is possible.",
-      "popularity": 573.386,
-      "poster_path": "/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
-      "release_date": "2023-12-06",
-      "title": "Wonka",
-      "video": false,
-      "vote_average": 7.197,
-      "vote_count": 2521
+      "popularity": 385.177,
+      "first_air_date": "2024-03-07",
+      "vote_average": 8.347,
+      "vote_count": 134,
+      "origin_country": [
+        "GB"
+      ]
     },
     {
       "adult": false,
-      "backdrop_path": "/G56AzECyTDp63sE7CbJ6AEBKhF.jpg",
+      "backdrop_path": "/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "id": 37854,
+      "name": "One Piece",
+      "original_language": "ja",
+      "original_name": "ワンピース",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster_path": "/cMD9Ygz11zjJzAovURpO75Qg7rT.jpg",
+      "media_type": "tv",
       "genre_ids": [
-        37,
-        28
+        10759,
+        35,
+        16
       ],
-      "id": 851925,
+      "popularity": 167.065,
+      "first_air_date": "1999-10-20",
+      "vote_average": 8.729,
+      "vote_count": 4367,
+      "origin_country": [
+        "JP"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4W9kyBFT69ORP5Jzk9mVMGBBO4R.jpg",
+      "id": 206586,
+      "name": "The Walking Dead: The Ones Who Live",
       "original_language": "en",
-      "original_title": "Death Alley",
-      "overview": "In 1892, the Dalton Gang set out to become the most famous outlaws in America. That dream would become a nightmare.",
-      "popularity": 538.105,
-      "poster_path": "/iIKYK9mdapWlJ21YNRGB57WKErK.jpg",
-      "release_date": "2021-03-11",
-      "title": "Death Alley",
-      "video": false,
-      "vote_average": 5.655,
-      "vote_count": 29
+      "original_name": "The Walking Dead: The Ones Who Live",
+      "overview": "The love story of Rick Grimes and Michonne is changed by a changed world. Kept apart by distance. By an unstoppable power. Can they find each other and who they were in a situation unlike any they've ever known?",
+      "poster_path": "/ywbacot78IuNhGW4uVZPxxxVTkm.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        10765,
+        18
+      ],
+      "popularity": 2149.61,
+      "first_air_date": "2024-02-25",
+      "vote_average": 8.331,
+      "vote_count": 186,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/x3XEQ3Wey8enS7mMjo3eUJp8Myi.jpg",
+      "id": 155533,
+      "name": "Manhunt",
+      "original_language": "en",
+      "original_name": "Manhunt",
+      "overview": "A conspiracy thriller about one of the best known but least understood crimes in history. This is the astonishing story of the hunt for John Wilkes Booth in the aftermath of Abraham Lincoln's assassination—as the fate of the country hangs in the balance.",
+      "poster_path": "/pN5qeqDgCG1Pij7KaEBKLkyjn4A.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "popularity": 293.381,
+      "first_air_date": "2024-03-14",
+      "vote_average": 8.1,
+      "vote_count": 9,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ydf1CeiBLfdxiyNTpskM0802TKl.jpg",
+      "id": 12971,
+      "name": "Dragon Ball Z",
+      "original_language": "ja",
+      "original_name": "ドラゴンボールゼット",
+      "overview": "The adventures of Earth's martial arts defender, Son Goku, continue with a new family and the revelation of his alien origins. Now Goku and his allies must defend the planet from an onslaught of new extraterrestrial enemies.",
+      "poster_path": "/dBsDWUcdfbuZwglgyeeQ9ChRoS4.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        16,
+        10765,
+        10759
+      ],
+      "popularity": 493.492,
+      "first_air_date": "1989-04-26",
+      "vote_average": 8.325,
+      "vote_count": 4253,
+      "origin_country": [
+        "JP"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/CQQyljC8KT8tMWyZ1fBinMJnXx.jpg",
+      "id": 245902,
+      "name": "Quiet on Set: The Dark Side of Kids TV",
+      "original_language": "en",
+      "original_name": "Quiet on Set: The Dark Side of Kids TV",
+      "overview": "Discover the untold story of the toxic and abusive environment inside '90s kids' TV. Hear harrowing accounts from former child stars and crew who probe the balance of power in the industry and reveal an era that inflicted lasting wounds still felt today.",
+      "poster_path": "/uTQD87qAuebJRuc5U5lO2dA4q9s.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        99,
+        80
+      ],
+      "popularity": 120.859,
+      "first_air_date": "2024-03-17",
+      "vote_average": 8.8,
+      "vote_count": 6,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kSh5AfkJ38UqjbUvFrPQlvKNU0v.jpg",
+      "id": 108545,
+      "name": "3 Body Problem",
+      "original_language": "en",
+      "original_name": "3 Body Problem",
+      "overview": "Across continents and decades, five brilliant friends make earth-shattering discoveries as the laws of science unravel and an existential threat emerges.",
+      "poster_path": "/sphnjjiYb50SbWMToW7fyGigH1n.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        18,
+        9648,
+        10765
+      ],
+      "popularity": 136.429,
+      "first_air_date": "2024-03-21",
+      "vote_average": 10,
+      "vote_count": 3,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4diQCWNckcvrjGhgSYdCBOpu1BP.jpg",
+      "id": 242875,
+      "name": "Iron Reign",
+      "original_language": "es",
+      "original_name": "Mano de hierro",
+      "overview": "Joaquín Manchado rules his drug empire from Barcelona's seaport with an iron fist — until a new shipment sends business and family spiraling.",
+      "poster_path": "/790ev3mIPOX7zwG2NvRnXgxzogy.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        80,
+        18
+      ],
+      "popularity": 273.381,
+      "first_air_date": "2024-03-15",
+      "vote_average": 9.1,
+      "vote_count": 5,
+      "origin_country": [
+        "ES"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pIGLdSGbdBAKu5diYFkU5nLpXkI.jpg",
+      "id": 197125,
+      "name": "Constellation",
+      "original_language": "en",
+      "original_name": "Constellation",
+      "overview": "When a fatal accident occurs on board the International Space Station, a lone astronaut makes the heroic journey back to Earth, only to discover key pieces of her life—including her young daughter—have changed.",
+      "poster_path": "/21ICs3fxlxGslbzS4moCHk9HNo6.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        10765,
+        9648,
+        18
+      ],
+      "popularity": 370.39,
+      "first_air_date": "2024-02-21",
+      "vote_average": 8.105,
+      "vote_count": 76,
+      "origin_country": [
+        "DE",
+        "FR",
+        "GB"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gJ5wIChiPCJI0jPi47slHwA2iYy.jpg",
+      "id": 241269,
+      "name": "Bandidos",
+      "original_language": "es",
+      "original_name": "Bandidos",
+      "overview": "A gang of skilled misfits ventures to uncover a long-hidden Mayan treasure. Their strategy? Hazy. Their dynamic? Off. Luckily, they're pretty ingenious.",
+      "poster_path": "/hoM8DvKJw5KPfdHbcITxn0rO2HZ.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        10759
+      ],
+      "popularity": 552.682,
+      "first_air_date": "2024-03-13",
+      "vote_average": 8.105,
+      "vote_count": 19,
+      "origin_country": [
+        "MX"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/b3DRog3Ilv0HoOELlFTgnTng5KK.jpg",
+      "id": 206686,
+      "name": "Chicken Nugget",
+      "original_language": "ko",
+      "original_name": "닭강정",
+      "overview": "A woman steps into an odd machine and becomes - a chicken nugget? Now, it's up to her father and admirer to embark on a zany quest to bring her back.",
+      "poster_path": "/9hefpkltcFLcZSKXr65l0mPMRKn.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        9648,
+        35,
+        10765,
+        18
+      ],
+      "popularity": 75.608,
+      "first_air_date": "2024-03-15",
+      "vote_average": 7.3,
+      "vote_count": 10,
+      "origin_country": [
+        "KR"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1YMx2eZs8kr32Y2gxrRN9MdPNr.jpg",
+      "id": 12609,
+      "name": "Dragon Ball",
+      "original_language": "ja",
+      "original_name": "ドラゴンボール",
+      "overview": "Long ago in the mountains, a fighting master known as Son Gohan discovered a strange boy whom he named Son Goku. Gohan raised him and trained Goku in martial arts until he died. The young and very strong boy was on his own, but easily managed. Then one day, Goku met a teenage girl named Bulma, whose search for the mystical Dragon Balls brought her to Goku's home. Together, they set off to find all seven and to grant her wish.",
+      "poster_path": "/onCLyCOgszTIyyVs2XKYSkKPOPG.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        16,
+        10759,
+        10765
+      ],
+      "popularity": 30.014,
+      "first_air_date": "1986-02-26",
+      "vote_average": 8.252,
+      "vote_count": 2945,
+      "origin_country": [
+        "JP"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lWkS3ygISl4tRHpcvWHWySG1Uxz.jpg",
+      "id": 125910,
+      "name": "Young Royals",
+      "original_language": "sv",
+      "original_name": "Young Royals",
+      "overview": "Prince Wilhelm adjusts to life at his prestigious new boarding school, Hillerska, but following his heart proves more challenging than anticipated.",
+      "poster_path": "/uGGAoM8ojRHOXj16n6xWiccKr34.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        18
+      ],
+      "popularity": 511.48,
+      "first_air_date": "2021-07-01",
+      "vote_average": 8.609,
+      "vote_count": 1012,
+      "origin_country": [
+        "SE"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/odVlTMqPPiMksmxpN9cCbPCjUPP.jpg",
+      "id": 127532,
+      "name": "Solo Leveling",
+      "original_language": "ja",
+      "original_name": "俺だけレベルアップな件",
+      "overview": "They say whatever doesn’t kill you makes you stronger, but that’s not the case for the world’s weakest hunter Sung Jinwoo. After being brutally slaughtered by monsters in a high-ranking dungeon, Jinwoo came back with the System, a program only he could see, that’s leveling him up in every way. Now, he’s inspired to discover the secrets behind his powers and the dungeon that spawned them.",
+      "poster_path": "/geCRueV3ElhRTr0xtJuEWJt6dJ1.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        16,
+        10759,
+        10765
+      ],
+      "popularity": 568.378,
+      "first_air_date": "2024-01-07",
+      "vote_average": 8.753,
+      "vote_count": 196,
+      "origin_country": [
+        "JP"
+      ]
     }
   ],
-  "total_pages": 43028,
-  "total_results": 860547
+  "total_pages": 1000,
+  "total_results": 20000
 }

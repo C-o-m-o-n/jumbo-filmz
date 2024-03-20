@@ -120,7 +120,7 @@ export default function Home() {
           </div>
           )}
 
-          <MovieList urlType={trendingUrl} trendingTrailerBtn={trendingTrailerBtn} divStyle={"flex flex-row w-[270px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-3"} imageStyle={"rounded w-[60px] h-[100px]"} customStyle={'hidden md:flex flex-col gap-3 justify-center items-center w-auto md:w-full'} limit={3} />
+          <MovieList showName={true} urlType={trendingUrl} trendingTrailerBtn={trendingTrailerBtn} divStyle={"flex flex-row w-[270px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-3"} imageStyle={"rounded w-[60px] h-[100px]"} customStyle={'hidden md:flex flex-col gap-3 justify-center items-center w-auto md:w-full'} limit={3} />
 
         </div>
       </div>
@@ -136,7 +136,7 @@ export default function Home() {
         }
 
 
-<MovieList urlType={discoverUrl} imageStyle={" rounded w-full h-full"} customStyle={'hidden md:flex flex-row gap-3 justify-center items-ceter md:w-full'} limit={6} />
+<MovieList showName={false} urlType={discoverUrl} imageStyle={" rounded w-full h-full"} customStyle={'hidden md:flex flex-row gap-3 justify-center items-ceter md:w-full'} limit={6} />
 {/* <MovieList urlType={discoverUrl} imageStyle={" rounded w-[300px] h-full"} customStyle={'flex flex-row gap-2 justify-center items-ceter w-full xsm:hidden md:hidden'} limit={2} /> */}
 
         <div className="flex flex-row items-ceter justify-between gap-3 mt-5">
