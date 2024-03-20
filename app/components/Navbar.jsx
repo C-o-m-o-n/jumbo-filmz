@@ -40,7 +40,7 @@ function Navbar() {
                         className={activeButton === "Home" ? "flex flex-row items-center transition-all duration-300 ease-in-out bg-[#b70000] rounded-3xl" : 'flex flex-row items-center transition-all duration-300 ease-in-out hover:bg-[#b70000] rounded-3xl'}>
                         <MdOutlineHome className='ml-3' />
                         <span className="select-none flex items-center px-4 py-2 cursor-pointer my-[.4rem] rounded-[.95rem]">
-                            <Link href="/" className="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-white">Home</Link>
+                            <Link href="/content/movies" className="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-white">Home</Link>
                         </span>
                     </div>
 
@@ -113,7 +113,7 @@ function Navbar() {
 
                 </div>
             </div>
-            <div className="flex items-center m-3">
+            <div className="bg-[#efefef] rounded-2xl py-1 px-2 flex items-center m-3">
                 <UserButton afterSignOutUrl='/' showName />
             </div>
         </aside>

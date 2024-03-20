@@ -16,7 +16,7 @@ const trendingUrl = "https://api.themoviedb.org/3/trending/movie/day?language=en
 function trendingTrailerBtn() {
   return (
     <div className='flex flex-row items-center mt-3 w-[100px] transition-all duration-300 ease-in-out bg-[#b70000] rounded-3xl'>
-      <FaEye size={25} className='ml-3' />
+      <FaEye size={25} className='ml-2' />
       <span className="select-none flex items-center px-3 py-2 cursor-pointer rounded-[.95rem]">
         <Link href="javascript:;" className="flex items-center flex-grow hover:text-white">Trailer</Link>
       </span>

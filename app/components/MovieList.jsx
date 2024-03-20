@@ -48,6 +48,7 @@ const MovieList = ({ urlType, showName, tvshows,  imageStyle, trendingTrailerBtn
               {tvshows == true ? movie.name : movie.title }
               </h2>) : null}
               {trendingTrailerBtn && trendingTrailerBtn()}
+              
               </div>
 
           </div>
