@@ -61,7 +61,7 @@ function Navbar() {
                         className={activeButton === "trending" ? "flex flex-row items-center transition-all duration-300 ease-in-out bg-[#b70000] rounded-3xl" : 'flex flex-row items-center transition-all duration-300 ease-in-out hover:bg-[#b70000] rounded-3xl'}>
                         <MdOutlineWhatshot className='ml-3' />
                         <span className="select-none flex items-center px-4 py-2 cursor-pointer my-2 rounded-[.95rem]">
-                            <Link href="/movies/trending" className="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-white">Trending</Link>
+                            <Link href="/content/movies/trending" className="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-white">Trending</Link>
                         </span>
                     </div>
 

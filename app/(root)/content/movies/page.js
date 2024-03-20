@@ -4,11 +4,10 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from 'next/link'
 import { UserButton } from "@clerk/nextjs";
-import TopNav from "../components/TopNav";
 import { MdOutlinePlaylistAdd } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaEye } from "react-icons/fa";
-import MovieList from "../components/MovieList";
+import MovieList from "../../../components/MovieList";
 import axios from "axios";
 
 const discoverUrl = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc"
@@ -68,8 +67,6 @@ export default function Home() {
   )}
 
 
-      {/* <TopNav /> */}
-
       <div className="flex flex-row gap-5">
         <div className="mt-20 md:mt-auto h-auto relative">
           {/* <Image className="md:rounded-2xl w-[700px] h-[400px]" src="/assets/spider-verse.jpg" width={700} height={250} /> */}
@@ -119,7 +116,7 @@ export default function Home() {
           {Loading == false && (
             <div className="hidden md:flex flex-row items-ceter justify-between">
             <p>Trending</p>
-            <Link className="flex flex-row items-center" href='/movies/trending'><p>All</p> <IoIosArrowForward /></Link>
+            <Link className="flex flex-row items-center" href='/content/movies/trending'><p>All</p> <IoIosArrowForward /></Link>
           </div>
           )}
 
@@ -133,7 +130,7 @@ export default function Home() {
           Loading == false && (
             <div className="hidden md:flex flex-row items-ceter justify-between">
           <p>Discover</p>
-          <Link className="flex flex-row items-center" href='/movies/discover'><p>All</p> <IoIosArrowForward /></Link>
+          <Link className="flex flex-row items-center" href='/content/movies/discover'><p>All</p> <IoIosArrowForward /></Link>
         </div>
           )
         }
