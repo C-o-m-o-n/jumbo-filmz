@@ -1,8 +1,8 @@
 
 import { Inter } from "next/font/google";
-import Navbar from "../components/Navbar";
-import TopNav from "../components/TopNav";
-import RightNav from "../components/RightNav";
+import Navbar from "../../components/Navbar";
+import TopNav from "../../components/TopNav";
+import RightNav from "../../components/RightNav";
 
 export default function RootLayout({ children }) {
   return (
