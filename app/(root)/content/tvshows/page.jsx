@@ -28,6 +28,7 @@ export default function Home() {
 
   const [Loading, setLoading] = useState(true)
   const [randomMovie, setRandomMovie] = useState()
+  const [ApiResponse, setApiResponse] = useState([])
 
   //for getting and desplaying random bunners
   useEffect(() => {
@@ -39,6 +40,8 @@ export default function Home() {
             Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_ACCESS_TOKEN}`,
           },
         });
+        setApiResponse(response.data.results);
+
         const randomMovieIndex = Math.floor(Math.random() * response.data.results.length);
         const selectedMovie = response.data.results[randomMovieIndex];
         setRandomMovie(selectedMovie);
@@ -78,6 +81,7 @@ function getVideo(series_id){
 
   const [showVideoPlayer, setShowVideoPlayer] = useState(false);
   const [trailerKey, setTrailerKey] = useState('');
+
 
     // Function to handle the click event on the "watch trailer" button
     const handleWatchTrailerClick = () => {
@@ -120,7 +124,7 @@ Close
 </button>
 
         <iframe
-        className="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:rounded-2xl h-full w-screen md:w-[750px] md:h-[400px]"
+        className="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:rounded-2xl h-auto w-screen md:w-[750px] md:h-[400px]"
           src={`https://www.youtube.com/embed/${trailerKey}` || `https://www.youtube.com/watch?v=${trailerKey}`}
           title="YouTube video player"
           frameBorder="0"
@@ -205,13 +209,17 @@ Close
 <MovieList showName={false} tvshows={true} urlType={discoverUrl} imageStyle={" rounded w-full h-full"} customStyle={'hidden md:flex flex-row gap-3 justify-center items-ceter md:w-full'} limit={6} />
 </div>
 
-{/* <MovieList urlType={discoverUrl} imageStyle={" rounded w-[300px] h-full"} customStyle={'flex flex-row gap-2 justify-center items-ceter w-full xsm:hidden md:hidden'} limit={2} /> */}
-
-        <div className="flex flex-row items-ceter justify-between gap-3 mt-5">
-
-
-
+        <div class="grid grid-cols-2 md:hidden gap-4">
+       {ApiResponse && ApiResponse.slice(0, 4).map((movie) => (
+    <div key={movie.id} class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt=""/>
+        <h2 className='text-center'>{movie.title}</h2>
         </div>
+   
+</div>
+))}
+</div>
       </div>
 
     </main>
