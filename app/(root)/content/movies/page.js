@@ -24,10 +24,11 @@ function trendingTrailerBtn() {
   )
 }
 
-export default function Home() {
+export default function Movies() {
 
   const [Loading, setLoading] = useState(true)
   const [randomMovie, setRandomMovie] = useState()
+  const [trailerKey, setTrailerKey] = useState('');
 
   //for getting and desplaying random bunners
   useEffect(() => {
@@ -52,7 +53,43 @@ export default function Home() {
     }
 
     getMovies();
+
+   
   }, []);
+
+function getVideo(movie_id){
+  const options = {
+    method: 'GET',
+    headers: {
+      accept: 'application/json',
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_ACCESS_TOKEN}`,
+    }
+  };
+  
+  fetch(`https://api.themoviedb.org/3/movie/${movie_id}/videos?language=en-US`, options)
+    .then(response => response.json())
+    .then((response) => {
+      console.log("trailer esponse ", response)
+
+      const trailer = response.results[0];
+      setTrailerKey(trailer.key);
+    })
+    .catch(err => console.error(err));
+}
+
+  const [showVideoPlayer, setShowVideoPlayer] = useState(false);
+  // const [playing, setPlaying] = useState(false)
+
+    // Function to handle the click event on the "watch trailer" button
+    const handleWatchTrailerClick = () => {
+      getVideo(randomMovie.id)
+      setShowVideoPlayer(true);
+    };
+  
+    // Function to close the video player
+    const closeVideoPlayer = () => {
+      setShowVideoPlayer(false);
+    };
 
   return (
     <main className="flex min-h-screen flex-col items-start md:ml-[210px] md:mt-[80px]">
@@ -66,8 +103,36 @@ export default function Home() {
   
   )}
 
+{/* Video player */}
+{showVideoPlayer && (
+        <div className="video-player-overlay">
+          <div className="video-player">
+            
 
-      <div className="flex flex-row gap-5">
+            {/* Video */}
+              {/* <source src="/videoNextjs.mp4" type="video/mp4" />
+              Your browser does not support the video tag. */}
+              {trailerKey && (
+                <>
+{/* Close button */}
+<button className="absolute z-40 top-[100px] left-1/2 transform -translate-x-1/2 -translate-y-1/2" onClick={closeVideoPlayer}>
+Close
+</button>
+
+        <iframe
+        className="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:rounded-2xl h-full w-screen md:w-[750px] md:h-[400px]"
+          src={`https://www.youtube.com/embed/${trailerKey}` || `https://www.youtube.com/watch?v=${trailerKey}`}
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+        </>
+      )}
+          </div>
+        </div>
+      )}
+      <div className={`${showVideoPlayer && 'blur-bg'} flex flex-row gap-5`}>
         <div className="mt-20 md:mt-auto h-auto relative">
           {/* <Image className="md:rounded-2xl w-[700px] h-[400px]" src="/assets/spider-verse.jpg" width={700} height={250} /> */}
           {randomMovie && (
@@ -86,7 +151,7 @@ export default function Home() {
 
 
               <div className="flex flex-row items-center md:mt-3 gap-3">
-                <div className='flex flex-row items-center w-[132px] transition-all duration-300 ease-in-out bg-[#b70000] rounded-3xl'>
+                <div onClick={handleWatchTrailerClick} className='flex flex-row items-center w-[132px] transition-all duration-300 ease-in-out bg-[#b70000] rounded-3xl'>
                   <FaEye size={25} className='ml-3' />
                   <span className="select-none flex items-center px-4 py-2 cursor-pointer my-[.4rem] rounded-[.95rem]">
                     <Link href="javascript:;" className="flex items-center flex-grow hover:text-white">Trailer</Link>
@@ -135,9 +200,11 @@ export default function Home() {
           )
         }
 
-
+<div className={`${showVideoPlayer && 'blur-bg'}`} >
 <MovieList showName={false} urlType={discoverUrl} imageStyle={" rounded w-full h-full"} customStyle={'hidden md:flex flex-row gap-3 justify-center items-ceter md:w-full'} limit={6} />
 {/* <MovieList urlType={discoverUrl} imageStyle={" rounded w-[300px] h-full"} customStyle={'flex flex-row gap-2 justify-center items-ceter w-full xsm:hidden md:hidden'} limit={2} /> */}
+</div>
+
 
         <div className="flex flex-row items-ceter justify-between gap-3 mt-5">
 
