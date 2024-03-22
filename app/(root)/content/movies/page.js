@@ -29,6 +29,7 @@ export default function Movies() {
   const [Loading, setLoading] = useState(true)
   const [randomMovie, setRandomMovie] = useState()
   const [trailerKey, setTrailerKey] = useState('');
+  const [ApiResponse, setApiResponse] = useState([])
 
   //for getting and desplaying random bunners
   useEffect(() => {
@@ -40,6 +41,8 @@ export default function Movies() {
             Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_ACCESS_TOKEN}`,
           },
         });
+
+        setApiResponse(response.data.results);
         const randomMovieIndex = Math.floor(Math.random() * response.data.results.length);
         const selectedMovie = response.data.results[randomMovieIndex];
         setRandomMovie(selectedMovie);
@@ -120,7 +123,7 @@ Close
 </button>
 
         <iframe
-        className="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:rounded-2xl h-full w-screen md:w-[750px] md:h-[400px]"
+        className="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:rounded-2xl h-auto w-screen md:w-[750px] md:h-[400px]"
           src={`https://www.youtube.com/embed/${trailerKey}` || `https://www.youtube.com/watch?v=${trailerKey}`}
           title="YouTube video player"
           frameBorder="0"
@@ -211,6 +214,18 @@ Close
 
 
         </div>
+
+        <div class="grid grid-cols-2 md:hidden gap-4">
+       {ApiResponse && ApiResponse.slice(0,4).map((movie) => (
+    <div key={movie.id} class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt=""/>
+        <h2 className='text-center'>{movie.title}</h2>
+        </div>
+   
+</div>
+))}
+</div>
       </div>
 
     </main>
