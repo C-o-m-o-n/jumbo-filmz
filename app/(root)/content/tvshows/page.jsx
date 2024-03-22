@@ -124,7 +124,7 @@ Close
 </button>
 
         <iframe
-        className="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:rounded-2xl h-auto w-screen md:w-[750px] md:h-[400px]"
+        className="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:rounded-2xl h-full w-screen md:w-[750px] md:h-[400px]"
           src={`https://www.youtube.com/embed/${trailerKey}` || `https://www.youtube.com/watch?v=${trailerKey}`}
           title="YouTube video player"
           frameBorder="0"
