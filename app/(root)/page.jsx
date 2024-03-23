@@ -31,7 +31,7 @@ export default function Home() {
         </div>
         <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
             <span class="font-semibold dark:text-white uppercase">Followers on our</span>
-            <div class="flex flex-row md:flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
+            <div class="flex flex-col md:flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
             <Link href="#" className="flex flex-col md:flex-row justify-center items-center mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:text-white">
             <RiFacebookBoxFill size={50} />
                   <span className="text-[20px] font-bold">Facebook page</span>
