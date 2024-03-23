@@ -6,12 +6,12 @@ import { UserButton } from "@clerk/nextjs";
 import Image from 'next/image' 
 import { FaRegBell } from "react-icons/fa";
 import { BsLightning } from "react-icons/bs";
-
 import { RiMenu5Fill } from "react-icons/ri";
 function TopNav() {
 
   // State to keep track of the active button
   const [activeButton, setActiveButton] = useState(null);
+  const [menuOpen, setmenuOpen] = useState(false)
 
   // Function to handle button click and update active state
   const handleButtonClick = (buttonName) => {
@@ -22,7 +22,7 @@ function TopNav() {
     
 
 <nav className="bg-white dark:bg-[#23252e] fixed w-full z-20 top-0 md:start-[200px]">
-  <div className="max-w-screen-xl flex flex-wrap justify-center gap-[200px] items-center mx-auto p-4">
+  <div className="max-w-screen-xl flex justify-center gap-[20px] md:gap-[200px] items-center mx-auto p-4">
  {/* <p>Hello</p> */}
   <form className="flex items-center ml-[1y0px] max-w-lg">   
     <label for="voice-search" className="sr-only">Search</label>
@@ -45,8 +45,61 @@ function TopNav() {
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
         </svg>Search
     </button>
-    <RiMenu5Fill className='ml-3 md:hidden' />
+
+   
 </form>
+<button 
+onClick={()=>setmenuOpen(!menuOpen)}
+     type="button"
+     className="inline-flex items-center w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden
+      hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700
+       dark:focus:ring-gray-600" >
+    <RiMenu5Fill  className='ml-3 text-center md:hidden' size={30} />
+       
+    </button>
+    <div className={`${menuOpen ? ('absolute transition-all duration-300 ease-in-out top-[60px] block md:hidden w-full') : 'hidden'}`} id="navbar-default">
+      <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#23252e]
+       md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  md:dark:bg-[#23252e] dark:border-gray-700">
+       <li 
+      // "block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+      onClick={() => {
+        setActiveButton(null);
+        handleButtonClick("Movies")}}>
+        <Link href="/content/movies" 
+        className={activeButton === "Movies" ? "block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" : 
+        'block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700'} 
+        aria-current="page">Movies</Link>
+      </li>
+      <li
+      onClick={() => {
+        setActiveButton(null);
+        handleButtonClick("tvshows")}}>
+        <Link href="/content/tvshows" className={activeButton === "tvshows" ? "block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" : 'block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700'}>Tv Shows</Link>
+      </li>
+      <li
+      onClick={() => {
+        setActiveButton(null);
+        handleButtonClick("Anime")}}>
+        <Link href="#" className={activeButton === "Anime" ? "block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" : 'block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700'}>Anime</Link>
+      </li>
+      <div className="flex flex-row justify-between">
+      <li>
+        <Link href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> 
+        <FaRegBell size={30} />
+        </Link>
+      </li>
+      <li>
+        <Link href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+          <BsLightning size={30} />
+          </Link>
+      </li>
+      <li>
+      <UserButton afterSignOutUrl='/' />
+      </li>
+      </div>
+      </ul>
+    </div>
+
 {/* <div className="w-[20px]"></div> */}
 
   <div className="items-center hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
