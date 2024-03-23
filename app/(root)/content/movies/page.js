@@ -1,9 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from 'next/link'
-import { UserButton } from "@clerk/nextjs";
 import { MdOutlinePlaylistAdd } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaEye } from "react-icons/fa";
@@ -25,7 +23,6 @@ function trendingTrailerBtn() {
 }
 
 export default function Movies() {
-
   const [Loading, setLoading] = useState(true)
   const [randomMovie, setRandomMovie] = useState()
   const [trailerKey, setTrailerKey] = useState('');
@@ -36,7 +33,7 @@ export default function Movies() {
     // setLoading()
     async function getMovies() {
       try {
-        const response = await axios.get(discoverUrl, {
+        const response = await axios.get(trendingUrl, {
           headers: {
             Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_ACCESS_TOKEN}`,
           },
@@ -56,8 +53,6 @@ export default function Movies() {
     }
 
     getMovies();
-
-
   }, []);
 
   function getVideo(movie_id) {
@@ -73,7 +68,6 @@ export default function Movies() {
     .then(response => response.json())
     .then((response) => {
       console.log("trailer esponse ", response)
-      
       const trailer = response.results[0];
       setTrailerKey(trailer.key);
     })
@@ -81,7 +75,6 @@ export default function Movies() {
   }
   
   const [showVideoPlayer, setShowVideoPlayer] = useState(false);
-  // const [playing, setPlaying] = useState(false)
   
   // Function to handle the click event on the "watch trailer" button
   const handleWatchTrailerClick = () => {
@@ -113,10 +106,6 @@ export default function Movies() {
         <div className="video-player-overlay">
           <div className="video-player">
 
-
-            {/* Video */}
-            {/* <source src="/videoNextjs.mp4" type="video/mp4" />
-              Your browser does not support the video tag. */}
             {trailerKey && (
               <>
                 {/* Close button */}
@@ -139,8 +128,7 @@ export default function Movies() {
       )}
       <div className={`${showVideoPlayer && 'blur-bg'} flex flex-row gap-5`}>
         <div className="mt-20 md:mt-auto h-auto relative">
-          {/* <Image className="md:rounded-2xl w-[700px] h-[400px]" src="/assets/spider-verse.jpg" width={700} height={250} /> */}
-          {randomMovie && (
+         {randomMovie && (
             <>
               <img
                 className="w-screen md:rounded-2xl w-auto md:w-full h-auto md:h-[400px]"
@@ -152,9 +140,7 @@ export default function Movies() {
                 <div>
                   <div className="absolute md:ml-12 top-[100px] md:top-[200px] flex flex-col justify-center items-ceter">
                     <p className=" text-left  font-bold text-[18px] text-[#efefef] md:text-[20px] uppercase">{randomMovie.title}</p>
-                    {/* <p className="text-center md:text-left text-[#efefef]">{randomMovie.overview}.</p> */}
-
-
+                    
                     <div className="flex flex-row items-center md:mt-3 gap-3">
                       <div onClick={handleWatchTrailerClick} className='flex flex-row items-center w-[132px] transition-all duration-300 ease-in-out bg-[#b70000] rounded-3xl'>
                         <FaEye size={25} className='ml-3' />
@@ -171,16 +157,12 @@ export default function Movies() {
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
-
-
             </>
           )}
 
         </div>
-
 
         <div className="hidden md:block">
           {Loading == false && (
@@ -189,9 +171,7 @@ export default function Movies() {
               <Link className="flex flex-row items-center" href='/content/movies/trending'><p>All</p> <IoIosArrowForward /></Link>
             </div>
           )}
-
           <MovieList showName={true} urlType={trendingUrl} trendingTrailerBtn={trendingTrailerBtn} divStyle={"flex flex-row w-[270px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-3"} imageStyle={"rounded w-[60px] h-[100px]"} customStyle={'hidden md:flex flex-col gap-3 justify-center items-center w-auto md:w-full'} limit={3} />
-
         </div>
       </div>
 
@@ -207,23 +187,14 @@ export default function Movies() {
 
         <div className={`${showVideoPlayer && 'blur-bg'}`} >
           <MovieList showName={false} urlType={discoverUrl} imageStyle={" rounded w-full h-full"} customStyle={'hidden md:flex flex-row gap-3 justify-center items-ceter md:w-full'} limit={6} />
-          {/* <MovieList urlType={discoverUrl} imageStyle={" rounded w-[300px] h-full"} customStyle={'flex flex-row gap-2 justify-center items-ceter w-full xsm:hidden md:hidden'} limit={2} /> */}
-        </div>
+         </div>
 
-
-        <div className="flex flex-row items-ceter justify-between gap-3 mt-5">
-
-
-
-        </div>
-
-        <div class="grid grid-cols-2 md:hidden gap-4">
+        <div className={`${showVideoPlayer && 'blur-bg'} grid grid-cols-2 md:hidden gap-4`}>
           {ApiResponse && ApiResponse.slice(0, 4).map((movie) => (
             <div key={movie.id} class="grid gap-4">
               <div>
                 <img class="h-auto max-w-full rounded-lg" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="" />
-                <h2 className='text-center'>{movie.title}</h2>
-              </div>
+                </div>
 
             </div>
           ))}
