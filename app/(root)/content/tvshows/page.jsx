@@ -73,7 +73,7 @@ function getVideo(series_id){
     .then((response) => {
       console.log("trailer esponse ", response)
 
-      const trailer = response.results[0];
+      const trailer = response.results[1];
       setTrailerKey(trailer.key);
     })
     .catch(err => console.error(err));
@@ -118,10 +118,10 @@ function getVideo(series_id){
               Your browser does not support the video tag. */}
               {trailerKey && (
                 <>
-{/* Close button */}
-<button className="absolute z-40 top-[100px] left-1/2 transform -translate-x-1/2 -translate-y-1/2" onClick={closeVideoPlayer}>
-Close
-</button>
+     {/* Close button */}
+     <button className='close-button' onClick={closeVideoPlayer}>
+                  Close
+                </button>
 
         <iframe
         className="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:rounded-2xl h-full w-screen md:w-[750px] md:h-[400px]"
@@ -209,7 +209,7 @@ Close
 <MovieList showName={false} tvshows={true} urlType={discoverUrl} imageStyle={" rounded w-full h-full"} customStyle={'hidden md:flex flex-row gap-3 justify-center items-ceter md:w-full'} limit={6} />
 </div>
 
-        <div class="grid grid-cols-2 md:hidden gap-4">
+        <div className={`${showVideoPlayer && 'blur-bg'} grid grid-cols-2 md:hidden gap-4`}>
        {ApiResponse && ApiResponse.slice(0, 4).map((movie) => (
     <div key={movie.id} class="grid gap-4">
         <div>
