@@ -11,9 +11,12 @@ export default function RootLayout({ children }) {
   return (
 	   <ClerkProvider>
     <html lang="en">
-
+    {/* <head>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+</head> */}
       <body className={inter.className}>
         {children}
+        {/* <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> */}
         </body>
     </html>
 	   </ClerkProvider>

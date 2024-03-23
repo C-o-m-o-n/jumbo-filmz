@@ -46,11 +46,11 @@ function Navbar() {
 
                     <div onClick={() => {
                         setActiveButton(null);
-                        handleButtonClick("New")}}
-                        className={activeButton === "New" ? "flex flex-row items-center transition-all duration-300 ease-in-out bg-[#b70000] rounded-3xl" : 'flex flex-row items-center transition-all duration-300 ease-in-out hover:bg-[#b70000] rounded-3xl'}>
+                        handleButtonClick("Upcoming")}}
+                        className={activeButton === "Upcoming" ? "flex flex-row items-center transition-all duration-300 ease-in-out bg-[#b70000] rounded-3xl" : 'flex flex-row items-center transition-all duration-300 ease-in-out hover:bg-[#b70000] rounded-3xl'}>
                         <MdOutlineWifiTethering className='ml-3' />
                         <span className="select-none flex items-center px-4 py-2 cursor-pointer my-[.4rem] rounded-[.95rem]">
-                            <Link href="javascript:;" className="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-white">New</Link>
+                            <Link href="/content/movies/upcoming" className="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-white">Upcoming</Link>
                         </span>
                     </div>
 
