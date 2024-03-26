@@ -171,7 +171,7 @@ export default function Movies() {
               <Link className="flex flex-row items-center" href='/content/movies/trending'><p>All</p> <IoIosArrowForward /></Link>
             </div>
           )}
-          <MovieList showName={true} urlType={trendingUrl} trendingTrailerBtn={trendingTrailerBtn} divStyle={"flex flex-row w-[270px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-3"} imageStyle={"rounded w-[60px] h-[100px]"} customStyle={'hidden md:flex flex-col gap-3 justify-center items-center w-auto md:w-full'} limit={3} />
+          <MovieList showName={true} urlType={trendingUrl} trendingTrailerBtn={trendingTrailerBtn} divStyle={"relative flex flex-row w-[270px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-3"} imageStyle={"rounded w-[60px] h-[100px]"} customStyle={'hidden md:flex flex-col gap-3 justify-center items-center w-auto md:w-full'} limit={3} />
         </div>
       </div>
 
@@ -186,7 +186,7 @@ export default function Movies() {
         }
 
         <div className={`${showVideoPlayer && 'blur-bg'}`} >
-          <MovieList showName={false} urlType={discoverUrl} imageStyle={" rounded w-full h-full"} customStyle={'hidden md:flex flex-row gap-3 justify-center items-ceter md:w-full'} limit={6} />
+          <MovieList trailerKeysetter={setTrailerKey} showName={false} urlType={discoverUrl} imageStyle={" rounded w-full h-full"} customStyle={'hidden md:flex flex-row gap-3 justify-center items-ceter md:w-full'} limit={6} />
          </div>
 
         <div className={`${showVideoPlayer && 'blur-bg'} grid grid-cols-2 md:hidden gap-4`}>

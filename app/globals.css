@@ -58,3 +58,39 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
+
+
+
+.card {
+  position: relative;
+  height: auto;
+  transition: 1s;
+}
+.button-grp{
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  /* left:7%;
+  bottom:8%; */
+  /* border: 2px solid red; */
+  background-color: black;
+  opacity: 0.5;
+  display: none;
+
+  transition: 1s;
+}
+
+/* .item-button{
+transition: 0.5s;
+} */
+.item-button:hover {
+  color: black;
+}
+
+.card:hover .button-grp {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

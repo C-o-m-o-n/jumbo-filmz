@@ -31,18 +31,18 @@ export default function Home() {
         </div>
         <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
             <span class="font-semibold dark:text-white uppercase">Followers on our</span>
-            <div class="flex flex-col md:flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
+            <div class="flex flex-row justify-center items-center mt-8 text-gray-500">
             <Link href="#" className="flex flex-col md:flex-row justify-center items-center mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:text-white">
             <RiFacebookBoxFill size={50} />
-                  <span className="text-[20px] font-bold">Facebook page</span>
+                  {/* <span className="text-[20px] font-bold">Facebook page</span> */}
               </Link>
               <Link href="#" className="flex flex-row justify-center items-center mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:text-white">
             <FaTwitterSquare size={50} />
-                  <span className="text-[20px] font-bold">Twitter space</span>
+                  {/* <span className="text-[20px] font-bold">Twitter space</span> */}
               </Link>
-              <Link href="#" className="flex flex-row justify-center items-center mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:text-white">
+              <Link href="https://chat.whatsapp.com/C20jy7vMUWJ8y9E8lhOvWj" target="_blank" className="flex flex-row justify-center items-center mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:text-white">
             <FaSquareWhatsapp size={50} />
-                  <span className="text-[20px] font-bold">WhatsApp group</span>
+                  {/* <span className="text-[20px] font-bold">WhatsApp group</span> */}
               </Link>  
             </div>
         </div> 
