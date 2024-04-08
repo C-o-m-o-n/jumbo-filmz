@@ -3,15 +3,16 @@
 import React from 'react';
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Image from "next/image";
-import Link from 'next/link'
-
+import { MdOutlinePlaylistAdd } from "react-icons/md";
+import { FaEye } from "react-icons/fa";
 
 const trendingUrl = "https://api.themoviedb.org/3/trending/movie/day?language=en-US"
 
 function Trending() {
   const [Loading, setLoading] = useState(true)
     const [ApiResponse, setApiResponse] = useState([])
+    const [trailerKey, setTrailerKey] = useState('');
+    const [showVideoPlayer, setShowVideoPlayer] = useState(false);
 
   useEffect(() => {
     async function getMovies() {
@@ -39,6 +40,37 @@ function Trending() {
 
   }, [])
 
+    // Function to handle the click event on the "watch trailer" button
+    const handleWatchTrailerClick = (movie) => {
+      getVideo(movie.id)
+      setShowVideoPlayer(true);
+    };
+  
+    // Function to close the video player
+    const closeVideoPlayer = () => {
+      setShowVideoPlayer(false);
+    };
+
+    function getVideo(movie_id) {
+      const options = {
+        method: 'GET',
+        headers: {
+          accept: 'application/json',
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_ACCESS_TOKEN}`,
+        }
+      };
+  
+      fetch(`https://api.themoviedb.org/3/movie/${movie_id}/videos?language=en-US`, options)
+        .then(response => response.json())
+        .then((response) => {
+          console.log("trailer esponse ", response)
+  
+          const trailer = response.results[0];
+          setTrailerKey(trailer.key);
+        })
+        .catch(err => console.error(err));
+    }
+
   return (
     <>
     <main className="mt-20 flex min-h-screen flex-col items-start md:ml-[210px] md:mr-[210px]  md:mt-[80px]">
@@ -50,9 +82,44 @@ function Trending() {
     </div>
   
   )}
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+     {/* Video player */}
+     {showVideoPlayer && (
+        <div className="video-player-overlay">
+          <div className="video-player">
+            {trailerKey && (
+              <>
+                {/* Close button */}
+                <button className="close-button" onClick={closeVideoPlayer}>
+                  Close
+                </button>
+
+                <iframe
+                  className="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:rounded-2xl h-full w-screen md:w-[750px] md:h-[400px]"
+                  src={`https://www.youtube.com/embed/${trailerKey}` || `https://www.youtube.com/watch?v=${trailerKey}`}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </>
+            )}
+          </div>
+        </div>
+      )}
+
+
+<div className={`${showVideoPlayer && 'blur-bg'} grid grid-cols-2 md:grid-cols-4 gap-4`}>
        {ApiResponse && ApiResponse.map((movie) => (
-    <div key={movie.id} class="grid gap-4">
+    <div key={movie.id} class="card grid gap-4">
+      <div className="button-grp ">
+                <FaEye
+                  onClick={()=>handleWatchTrailerClick(movie)} size={35} color='white'
+                  className='item-button cursor-pointer likes ml-3' />
+                <MdOutlinePlaylistAdd size={35} color='white'
+                  className='item-button download cursor-pointer ml-3' />
+              </div>
+
         <div>
             <img class="h-auto max-w-full rounded-lg" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt=""/>
         <h2 className='text-center'>{movie.title}</h2>
