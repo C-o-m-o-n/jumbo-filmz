@@ -139,7 +139,7 @@ export default function TvShows() {
                       <div onClick={handleWatchTrailerClick} className='flex flex-row items-center w-[132px] transition-all duration-300 ease-in-out bg-[#b70000] rounded-3xl'>
                         <FaEye size={25} className='ml-3' />
                         <span className="select-none flex items-center px-4 py-2 cursor-pointer my-[.4rem] rounded-[.95rem]">
-                          <Link href="javascript:;" className="flex items-center flex-grow hover:text-white">Trailer</Link>
+                          <p className="flex items-center flex-grow hover:text-white">Trailer</p>
                         </span>
                       </div>
                       <div className='flex flex-row items-center w-[132px] transition-all duration-300 ease-in-out bg-[#383e52] rounded-3xl'>
@@ -163,7 +163,7 @@ export default function TvShows() {
               <Link className="flex flex-row items-center" href='/content/tvshows/trending'><p>All</p> <IoIosArrowForward /></Link>
             </div>
           )}
-          <MovieList showName={true} tvshows={true} urlType={trendingUrl} trendingTrailerBtn={trendingTrailerBtn} divStyle={"flex flex-row w-[270px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-3"} imageStyle={"rounded w-[60px] h-[100px]"} customStyle={'hidden md:flex flex-col gap-3 justify-center items-center w-auto md:w-full'} limit={3} />
+          <MovieList showName={true} tvshows={true} urlType={trendingUrl} showOverlayBtns={false} trendingTrailerBtn={trendingTrailerBtn} divStyle={"flex flex-row w-[270px] gap-3 items-ceter rounded-2xl bg-[#23252e] mt-3"} imageStyle={"rounded w-[60px] h-[100px]"} customStyle={'hidden md:flex flex-col gap-3 justify-center items-center w-auto md:w-full'} limit={3} />
         </div>
       </div>
       <div className="w-auto mt-5 ">
@@ -177,7 +177,7 @@ export default function TvShows() {
         }
 
         <div className={`${showVideoPlayer && 'blur-bg'}`} >
-          <MovieList showName={false} tvshows={true} urlType={discoverUrl} imageStyle={" rounded w-full h-full"} customStyle={'hidden md:flex flex-row gap-3 justify-center items-ceter md:w-full'} limit={6} />
+          <MovieList showName={false} tvshows={true} discoverMovieIdSetter={setRandomMovie} showOverlayBtns={true} urlType={discoverUrl} imageStyle={" rounded w-full h-full"} customStyle={'hidden md:flex flex-row gap-3 justify-center items-ceter md:w-full'} limit={6} />
         </div>
         <div className={`${showVideoPlayer && 'blur-bg'} grid grid-cols-2 md:hidden gap-4`}>
           {ApiResponse && ApiResponse.slice(0, 4).map((movie) => (

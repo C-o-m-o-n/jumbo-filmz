@@ -11,7 +11,7 @@ import { FaEye } from "react-icons/fa";
 
 // https://api.themoviedb.org/3/trending/movie/day?language=en-US
 
-const MovieList = ({ urlType, showName, tvshows,  imageStyle, trailerKeysetter , trendingTrailerBtn, divStyle, customStyle, limit }) => {
+const MovieList = ({ urlType, showName, tvshows, discoverMovieIdSetter,  showOverlayBtns, imageStyle, trendingTrailerBtn, divStyle, customStyle, limit }) => {
   const [ApiResponse, setApiResponse] = useState([])
   const [trailerKey, setTrailerKey] = useState('');
 
@@ -39,37 +39,39 @@ const MovieList = ({ urlType, showName, tvshows,  imageStyle, trailerKeysetter ,
 
   }, [])
 
-  function getVideo(movie_id) {
-    const options = {
-      method: 'GET',
-      headers: {
-        accept: 'application/json',
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_ACCESS_TOKEN}`,
-      }
-    };
+  // function getVideo(movie_id) {
+  //   const options = {
+  //     method: 'GET',
+  //     headers: {
+  //       accept: 'application/json',
+  //       Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_ACCESS_TOKEN}`,
+  //     }
+  //   };
     
-    fetch(`https://api.themoviedb.org/3/movie/${movie_id}/videos?language=en-US`, options)
-    .then(response => response.json())
-    .then((response) => {
-      console.log("trailer esponse ", response)
-      const trailer = response.results[0];
-      trailerKeysetter(trailer.key);
-      // setTrailerKey(trailer.key);
-    })
-    .catch(err => console.error(err));
-  }
+  //   fetch(`https://api.themoviedb.org/3/movie/${movie_id}/videos?language=en-US`, options)
+  //   .then(response => response.json())
+  //   .then((response) => {
+  //     console.log("trailer esponse ", response)
+  //     const trailer = response.results[0];
+  //     trailerKeysetter(trailer.key);
+  //   })
+  //   .catch(err => console.error(err));
+  // }
 
   return (
     <>
       <div className={customStyle}>
         {ApiResponse && ApiResponse.slice(0, limit).map((movie) => (
           <div key={movie.id} className={`card ${divStyle ? divStyle : "w-[155px]"}`}>
-            <div className="button-grp ">
+            {showOverlayBtns && (<div className="button-grp ">
               
-            <FaEye onClick={getVideo(movie.id)} size={35} color='white' className='item-button likes ml-3' />
-            <MdOutlinePlaylistAdd size={35} color='white' className='item-button download ml-3' />
+            <FaEye 
+            onClick={() => discoverMovieIdSetter(movie)} size={35} color='white'
+             className='item-button cursor-pointer likes ml-3' />
+            <MdOutlinePlaylistAdd size={35} color='white'
+             className='item-button download cursor-pointer ml-3' />
       
-    </div>
+    </div>)}
             <img className={imageStyle} src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} 
             alt={movie.title} width={60} height={10} />
             <div>

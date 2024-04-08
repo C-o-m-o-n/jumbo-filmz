@@ -41,7 +41,7 @@ function Discover() {
 
   return (
     <>
-    <main className="mt-20 md:mt-auto flex min-h-screen flex-col items-start md:ml-[210px] md:mr-[210px]  md:mt-[80px]">
+    <main className="mt-20 flex min-h-screen flex-col items-start md:ml-[210px] md:mr-[210px]  md:mt-[80px]">
    {/* loader */}
    {Loading == true && (
               <div role="status" class="absolute -translate-x-1/2 -translate-y-1/2 top-[50%] left-[50%]">
